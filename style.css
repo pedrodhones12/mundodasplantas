@@ -7,7 +7,7 @@ body {
 
 /* Header styles - adicione a cor verde ao cabeçalho */
 header {
-    background-color: #00FF00; /* Adicione aqui a cor verde que deseja */
+    background-color: #00FF00; /* Cor verde */
     padding: 20px;
 }
 
@@ -69,4 +69,5 @@ footer {
 footer p {
     margin: 0;
 }
+
 
