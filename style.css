@@ -7,7 +7,7 @@ body {
 
 /* Header styles - adicione a cor verde ao cabeçalho */
 header {
-    background-color: green; /* Adicione aqui a cor verde que deseja */
+    background-color: #00FF00; /* Adicione aqui a cor verde que deseja */
     padding: 20px;
 }
 
@@ -66,8 +66,7 @@ footer {
     text-align: center;
 }
 
-/* Adicione a cor azul fraca ao texto do rodapé */
 footer p {
     margin: 0;
-    color: #336699; /* Adicione aqui a cor azul fraca que deseja */
 }
+
