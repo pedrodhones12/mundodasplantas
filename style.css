@@ -5,8 +5,9 @@ body {
     padding: 0;
 }
 
+/* Header styles - adicione a cor verde ao cabeçalho */
 header {
-    background-color: #f9f9f9;
+    background-color: green; /* Adicione aqui a cor verde que deseja */
     padding: 20px;
 }
 
@@ -56,65 +57,6 @@ nav a {
     width: 200px;
     height: auto;
     margin-bottom: 10px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #f9f9f9;
-    padding: 10px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav li:last-child {
-    margin-right: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Content styles */
-.content-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-h2, h3 {
-    color: #333;
 }
 
 /* Footer styles */
