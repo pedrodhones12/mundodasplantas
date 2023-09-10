@@ -1,0 +1,5 @@
+sudo nano /etc/apache2/sites-available/000-default.conf
+<VirtualHost *:80>
+    ServerName http://plantasdabahia.com.br/
+    Redirect permanent /http://plantasdabahia.com.br/
+</VirtualHost>
