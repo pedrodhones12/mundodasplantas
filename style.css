@@ -1,73 +1,33 @@
 /* General styles */
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-/* Header styles - adicione a cor verde ao cabeçalho */
-header {
-    background-color: #00FF00; /* Cor verde */
-    padding: 20px;
+h1 {
+    font-size: 24px;
+    color: #0066cc;
 }
 
-.header-container {
-    max-width: 1200px;
+img {
+    max-width: 300px;
+    height: auto;
+    display: block;
     margin: 0 auto;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+p {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-nav li {
+a {
     display: inline-block;
-    margin-right: 20px;
-}
-
-nav li:last-child {
-    margin-right: 0;
-}
-
-nav a {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
 }
-
-/* Product styles */
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.product-card {
-    flex: 0 1 250px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
-
-.product-card img {
-    width: 200px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #f9f9f9;
-    padding: 10px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-
