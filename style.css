@@ -1,33 +1,78 @@
-/* General styles */
+/* Reset de estilos padrão */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #00a550; /* Cor verde */
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 24px;
-    color: #0066cc;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-img {
-    max-width: 300px;
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-p {
-    font-size: 18px;
+.product-card h2 {
+    font-size: 20px;
     margin: 10px 0;
 }
 
+.product-card p {
+    font-size: 16px;
+}
+
+/* Estilos para links */
 a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0066cc;
-    color: #fff;
+    color: #0077c2; /* Cor azul semelhante ao Mercado Livre */
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
