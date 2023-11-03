@@ -1,3 +1,11 @@
+/* Exemplo de estilo para o ícone de cadeado */
+.lock-icon {
+    width: 20px;
+    height: 20px;
+    /* Adicione mais estilos aqui, se necessário */
+}
+
+
 /* Reset de estilos padrão */
 body, h1, p {
     margin: 0;
