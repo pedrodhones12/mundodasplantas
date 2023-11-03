@@ -1,8 +1,13 @@
-/* Exemplo de estilo para o ícone de cadeado */
-.lock-icon {
-    width: 20px;
+#lock-icon {
+    position: fixed;
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    right: 10px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 9999; /* Para garantir que o ícone esteja acima de outros elementos */
+}
+
+#lock-icon img {
+    width: 20px; /* Ajuste o tamanho do ícone conforme necessário */
     height: 20px;
-    /* Adicione mais estilos aqui, se necessário */
 }
 
 
