@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <header>
+        <div class="header-container">
+            <h1>Plantas da Bahia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+    <title>Muda de Batata
+100 Sementes Mucuna Pruriens Adubo Verde Para Plantio- Plantas da Bahia</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Mundodasplantas</h1>
+    <img src="img/30 Sementes.webp" alt="Muda de Batata doce">
+    <p>100 Sementes Mucuna Pruriens Adubo Verde Para Plantio.</p>
+    <p>Preço: R$ 19,00</p>
+  <h1>100 sementes de mucuna pruriens para plantio</h1>
+
+<h2SEMENTES SELECIONADAS E FÉRTEIS></h2>
+
+<h1>Descrição</h1>
+<p>MUDA DE LIMÃO SICILIANO
+NOME CIENTÍFICO: Citrus limon
+NOMES POPULARES: Limão-verdadeiro, Eureca, Lisboa
+TEMPO PARA PRODUÇÃO: Em média de 1 ano a 1 ano e meio
+TAMANHO DA MUDA A SER ENVIADA: 60 cm, podendo ter pequenas variações no tamanho</p>
+    <a href= "https://api.whatsapp.com/send?phone=+5573981135119&text=Olá!" target="_blank">Entre em contato pelo WhatsApp</a>
+</body>
+
+</html>
