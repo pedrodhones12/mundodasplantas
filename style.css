@@ -106,5 +106,23 @@ a:hover {
     max-width: 100%;
     height: auto;
 }
+/* Add this to your style.css file */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    margin: 10px;
+}
+
+.footer {
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
 
 /* Adicione outros estilos de acordo com suas preferências */
