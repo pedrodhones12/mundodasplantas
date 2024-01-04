@@ -1,9 +1,4 @@
 
-
-
-Certainly! I noticed a couple of issues in your CSS. Here's the corrected version:
-
-```css
 /* Reset de estilos padrão */
 body, h1, p {
     margin: 0;
@@ -112,13 +107,11 @@ a:hover {
 
 /* Adicione outros estilos de acordo com suas preferências */
 
-/* Footer Styles */
+/* Estilos para o rodapé */
 .footer {
     background-color: blue;
     padding: 10px;
     text-align: center;
     color: white;
 }
-```
 
-I added the missing `.footer` styles at the end of the CSS file. Now, your footer should have a blue background with white text.
