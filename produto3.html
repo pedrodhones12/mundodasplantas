@@ -1,3 +1,6 @@
+Há um problema no seu código. Parece que você tem duas seções diferentes de rodapé (`footer`). Além disso, a tag `<div class="header-container">` está sendo fechada no final, mas não foi aberta anteriormente. Aqui está o código corrigido:
+
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,7 +13,23 @@
 </head>
 
 <body>
-    <!-- ... (o restante do seu código) ... -->
+    <header>
+        <div class="header-container">
+            <h1>Plantas da Bahia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Nossos Produtos</h2>
+    <div class="product-container">
+        <!-- ... (seus produtos aqui) ... -->
+    </div>
 
     <!-- Seta para a próxima página de produtos -->
     <div class="next-page">
@@ -23,15 +42,9 @@
     <footer class="blue-background">
         <p>Desenvolvido por Construindo Sonhos Web</p>
     </footer>
+
 </body>
 </html>
+```
 
-
-
-     <!-- Rodapé -->
-<footer class="blue-background">
-    <p>Desenvolvido por Construindo Sonhos Web</p>
-</footer>
-</div> <!-- Fechamento da tag <div class="header-container"> -->
-</body>
-</html>
+Esta versão corrige a estrutura da página e remove a tag `footer` duplicada. Verifique se isso resolve os problemas que você estava enfrentando.
