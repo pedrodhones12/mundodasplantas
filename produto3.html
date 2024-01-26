@@ -1,7 +1,5 @@
-Há um problema no seu código. Parece que você tem duas seções diferentes de rodapé (`footer`). Além disso, a tag `<div class="header-container">` está sendo fechada no final, mas não foi aberta anteriormente. Aqui está o código corrigido:
 
-```html
-<!DOCTYPE html>
+              <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -28,10 +26,80 @@ Há um problema no seu código. Parece que você tem duas seções diferentes de
 
     <h2>Nossos Produtos</h2>
     <div class="product-container">
-        <!-- ... (seus produtos aqui) ... -->
+        
+        <div class="product-card">
+            <a href="mudadepalma.html">
+                <img src="img/30 Sementes De Feijão Mangalo.webp" alt="Muda 1">
+                <h2>30 Sementes De Feijão Mangalo Lab Lab Orelha De Padre P/muda</h2>
+            </a>
+            <p>Muda de palma.</p>
+            <p class="price">R$ 26,00</p>
+            
+        </div>
+        <div class="product-card">
+            <a href="mudadebatata.html">
+                <img src="img/kit 4 mudas de hortela.webp" alt="Muda de Batata doce">
+                <h2>Kit 4 Mudas De Hortelã + Manual De Plantio</h2>
+            </a>
+
+            <p class="price">R$ 38,00</p>
+            
+        </div>
+        <div class="product-card">
+            <a href="100Sementes Mucuna.html">
+                <img src="img/30 Sementes.webp" alt="Muda de Batata">
+                <h2>100 Sementes Mucuna Pruriens Adubo Verde Para Plantio</h2>
+            </a>
+            <p>100 Sementes Mucuna Pruriens Adubo Verde.</p>
+            <p class="price">R$ 19,00</p>
+        </div>
+        <div class="product-card">
+            <a href="5MudasDeHortelã.htmll">
+                <img src="img/5 MudasDeHortelã.webp" alt="Muda de Batata">
+                <h2>5 Mudas De Hortelã Pimenta | S/agrotóxicos | Alta Qualidade</h2>
+            </a>
+            <p>Muda de gravioala cinco unidades.</p>
+            <p class="price">R$ 50,00</p>
+        </div>
+        <div class="product-card">
+            <a href="pinhãoroxo.html">
+                 <img src="img/pinhãoroxomuda.webp" alt="Muda de Batata">
+                <p>Pinhão Roxo 2 Mudas</p>
+                <p class="price">R$ 60,00</p>
+            </a>
+        </div>
+        <div class="product-card">
+            <a href="200folhasmédias.html">
+                <img src="img/200folhasmédias.webp" alt="Muda de Batata">
+                <p>200 Folhas Médias De Graviola Orgânicas (frescas) + Brinde</p>
+                <p class="price">R$ 35,00</p>
+            </a>
+        </div>
+        <div class="product-card">
+            <a href="mudademorango.html">
+                <img src="img/mudademorango.webp" alt="Muda de Batata">
+                <p>Muda de Morango.</p>
+                <p class="price">R$ 65,00</p>
+            </a>
+        </div>
+        <div class="product-card">
+            <a href="MudaDeAlgodão.html">
+                <img src="img/algodão4mudas.webp" alt="Muda De Algodão 4 Unidades">
+                <p>Muda De Algodão 4 Unidades</p>
+                <p class="price">R$ 74,00</p>
+            </a>
+        </div>
+<div class="product-card">
+            <a href="mudadelimão.html">
+                <img src="img/mudadelimão.webp" alt="Muda De Limão Siciliano Enxertada ">
+                <h3>Muda De Limão Siciliano Enxertada </h3>
+                <p class="price">R$ 25,00</p>
+            </a>
+        </div>
+        <!-- Add other products here -->
     </div>
 
-    <!-- Seta para a próxima página de produtos -->
+<!-- Seta para a próxima página de produtos -->
     <div class="next-page">
         <a href="produtos1.html">&#8594; 1</a>
         <a href="produtos2.html">&#8594; 2</a>
@@ -42,9 +110,6 @@ Há um problema no seu código. Parece que você tem duas seções diferentes de
     <footer class="blue-background">
         <p>Desenvolvido por Construindo Sonhos Web</p>
     </footer>
-
 </body>
-</html>
-```
 
-Esta versão corrige a estrutura da página e remove a tag `footer` duplicada. Verifique se isso resolve os problemas que você estava enfrentando.
+</html>
