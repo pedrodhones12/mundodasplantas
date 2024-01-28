@@ -1,6 +1,5 @@
-Entendido! Aqui estão as modificações no seu código CSS, considerando as alterações solicitadas para padronizar a fonte e cor das descrições dos produtos:
+/* style.css */
 
-```css
 /* Reset de estilos padrão */
 body, h1, p {
     margin: 0;
@@ -67,8 +66,8 @@ h1 {
 
 .product-card h2,
 .product-card p {
-    font-family: 'Verdana', sans-serif; /* Alterada a fonte para Verdana */
-    color: black; /* Alterada a cor para preta */
+    font-family: 'Verdana', sans-serif;
+    color: black;
 }
 
 .product-card h2 {
@@ -120,6 +119,3 @@ a:hover {
     text-align: center;
     color: white;
 }
-```
-
-Essas modificações adicionam a fonte "Verdana" e a cor preta (`color: black`) para as descrições dos produtos dentro dos cartões. Certifique-se de substituir a fonte ou cor conforme suas preferências.
