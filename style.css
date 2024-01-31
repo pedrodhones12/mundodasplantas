@@ -99,7 +99,7 @@ a:hover {
 }
 
 .product-card {
-    flex: 0 1 calc(33.33% - 20px);
+    flex: 0 1 calc(100% - 20px);
     margin-bottom: 20px;
     border: 1px solid #ddd;
     padding: 20px;
@@ -107,9 +107,11 @@ a:hover {
     text-align: center;
 }
 
-.product-card img {
-    max-width: 100%;
-    height: auto;
+/* Estilos para dispositivos menores (media queries) */
+@media only screen and (min-width: 768px) {
+    .product-card {
+        flex: 0 1 calc(33.33% - 20px);
+    }
 }
 
 /* Estilos para o rodapé */
