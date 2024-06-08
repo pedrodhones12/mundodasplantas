@@ -45,18 +45,6 @@ nav a {
     font-size: 16px;
 }
 
-/* Estilos do conteúdo */
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
 /* Estilos dos cartões de produtos */
 .product-card {
     background-color: #fff;
@@ -124,10 +112,9 @@ a:hover {
 }
 
 /* Estilos para o rodapé */
-.footer {
-    background-color: #00a550;
-    color: #fff;
+.blue-background {
+    background-color: blue;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    color: white;
 }
