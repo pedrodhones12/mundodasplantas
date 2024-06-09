@@ -19,9 +19,21 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaçamento entre os elementos */
+    gap: 10px;
 }
 
 .header-title {
     text-align: center;
-    margin-top: 10px; /* Ajuste de margem se
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display:
+
+  
