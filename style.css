@@ -19,21 +19,13 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Espaçamento entre os elementos */
 }
 
 .header-title {
     text-align: center;
-    margin-top: 10px;
-}
+    margin-top: 10
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav li {
-    display:
+  
 
   
