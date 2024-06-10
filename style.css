@@ -1,4 +1,4 @@
- /* Reset de estilos padrão */
+/* Reset de estilos padrão */
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -41,79 +41,4 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Estilos dos cartões de produtos */
-.product-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.product-card h2,
-.product-card p {
-    font-family: 'Verdana', sans-serif;
-    color: black;
-}
-
-.product-card h2 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.product-card p {
-    font-size: 16px;
-}
-
-/* Estilos para links */
-a {
-    color: #0077c2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para a página de produtos */
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.product-card {
-    flex: 0 1 calc(100% - 20px);
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-/* Estilos para dispositivos menores (media queries) */
-@media only screen and (min-width: 768px) {
-    .product-card {
-        flex: 0 1 calc(33.33% - 20px);
-    }
-}
-}
-/* Estilos para o rodapé */
-.blue-background {
-    background-color: blue;
-    padding: 10px;
-    text-align: center;
-    color: white;
+    font
