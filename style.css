@@ -1,3 +1,4 @@
+
 /* Reset de estilos padrão */
 body, h1, p {
     margin: 0;
@@ -16,10 +17,10 @@ header {
     padding: 20px;
 }
 
-.header-container {
+.header-top {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px; /* Espaçamento entre os elementos */
 }
 
 .header-title {
@@ -27,93 +28,86 @@ header {
     margin-top: 10px; /* Ajuste de margem se necessário */
 }
 
-nav ul {
+.nav-menu {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     padding: 0;
-    text-align: center;
 }
 
-nav li {
+.nav-menu li {
     display: inline;
-    margin-right: 20px;
 }
 
-nav a {
+.nav-menu a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
-    font-size: 16px;
 }
 
-/* Estilos dos cartões de produtos */
-.product-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+/* Estilos da seção principal */
+.Meio {
     text-align: center;
+    padding: 20px;
 }
 
-.product-card img {
+.imagem img {
     max-width: 100%;
     height: auto;
 }
 
-.product-card h2,
-.product-card p {
-    font-family: 'Verdana', sans-serif;
-    color: black;
-}
-
-.product-card h2 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.product-card p {
-    font-size: 16px;
-}
-
-/* Estilos para links */
-a {
-    color: #0077c2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para a página de produtos */
+/* Estilos das categorias e produtos */
 .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 20px auto;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
 }
 
 .product-card {
-    flex: 0 1 calc(100% - 20px);
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     text-align: center;
+    width: 200px;
 }
 
-/* Estilos para dispositivos menores (media queries) */
-@media only screen and (min-width: 768px) {
-    .product-card {
-        flex: 0 1 calc(33.33% - 20px);
-    }
+.product-card img {
+    width: 100%;
+    height: auto;
 }
+
+.product-card h1, .product-card h3, .product-card p {
+    margin: 10px;
 }
-/* Estilos para o rodapé */
-.blue-background {
-    background-color: blue;
-    padding: 10px;
+
+.product-card .price {
+    color: green;
+    font-weight: bold;
+}
+
+.next-page {
     text-align: center;
-    color: white; 
+    margin: 20px 0;
+}
+
+.next-page a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00a550;
+    font-weight: bold;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #add8e6;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin:
