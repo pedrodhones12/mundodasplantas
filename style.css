@@ -54,7 +54,7 @@ header {
 .search-bar input {
     padding: 10px;
     width: 100%;
-    max-width: 400px; /* Aumenta a largura do campo de entrada */
+    max-width: 300px; /* Aumenta a largura do campo de entrada */
     border: 1px solid #ddd;
     border-radius: 5px;
 }
