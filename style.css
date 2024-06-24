@@ -53,8 +53,8 @@ header {
 
 .search-bar input {
     padding: 10px;
-    width: 100%;
-    max-width: 300px; /* Aumenta a largura do campo de entrada */
+    width: 50%;
+    max-width: 200px; /* Aumenta a largura do campo de entrada */
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -79,7 +79,7 @@ header {
 }
 
 .imagem img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
