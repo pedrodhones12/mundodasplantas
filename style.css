@@ -1,4 +1,4 @@
-/* Reset de estilos padrão */
+   /* Reset de estilos padrão */
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -90,6 +90,70 @@ header {
     justify-content: space-around;
     gap: 20px;
     padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 200px; /* Define o tamanho máximo do cartão */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Define a altura máxima da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+.product-card h1, .product-card h3, .product-card p {
+    margin: 10px;
+}
+
+.product-card .price {
+    color: green;
+    font-weight: bold;
+}
+
+.next-page {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.next-page a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00a550;
+    font-weight: bold;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #FFFFFF; /* Fundo branco */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+/* Media Queries para design responsivo */
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 45%; /* Ajusta a largura dos cartões em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        max-width: 100%; /* Ajusta a largura dos cartões em smartphones */
+    }
 }
 
 
