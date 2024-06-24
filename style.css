@@ -53,7 +53,8 @@ header {
 
 .search-bar input {
     padding: 10px;
-    width: 200px;
+    width: 100%;
+    max-width: 400px; /* Aumenta a largura do campo de entrada */
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -96,5 +97,4 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    text-align: center;
-    width:
+    text-align: center
