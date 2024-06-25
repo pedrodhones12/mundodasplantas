@@ -142,6 +142,9 @@ footer p {
     margin: 0;
     color: #333;
 }
+.text-black {
+    color: #000; /* Define a cor do texto como preto */
+}
 
 /* Media Queries para design responsivo */
 @media (max-width: 768px) {
