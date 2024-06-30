@@ -1,4 +1,6 @@
-   /* Reset de estilos padrão */
+
+
+/* Reset de estilos padrão */
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -159,4 +161,28 @@ footer p {
     }
 }
 
+/* Estilos da barra de notificação */
+.notification-bar {
+    background-color: #f9edbe;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
 
+.notification-bar p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
