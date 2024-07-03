@@ -143,6 +143,50 @@ header {
     font-weight: bold;
 }
 
+.product-card .add-to-cart {
+    background-color: #00a550;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #007c3a;
+}
+
+/* Estilos da página do carrinho */
+.cart-container {
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: darkred;
+}
+
 .next-page {
     text-align: center;
     margin: 20px 0;
@@ -167,6 +211,7 @@ footer p {
     margin: 0;
     color: #333;
 }
+
 .text-black {
     color: #000; /* Define a cor do texto como preto */
 }
