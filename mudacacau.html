@@ -36,6 +36,36 @@
     <p>O cacaueiro (Theobroma cacao) é a árvore perenifólia que dá origem ao fruto chamado cacau. Pertencente à família Malvaceae, o cacaueiro é originário da chuvosa Bacia do rio Amazonas, na América do Sul...</p>
     <!-- Restante da descrição continua aqui -->
     <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Olá!" target="_blank">Entre em contato pelo WhatsApp</a>
+  <!-- Social Media Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://plantasdabahia.com.br/mudacacau.html" target="_blank">
+           <img src="img/facebook_resized.jpeg" alt="Facebook" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnWhatsApp()">
+            <img src="img/whatsap emoji.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnTwitter()">
+            <img src="img/twiter_resized.jpeg" alt="Twitter" style="width: 32px; height: 32px;">
+        </a>
+    </div>
+
+    <script>
+        function shareOnWhatsApp() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent(">Muda de Cacau.- Plantas da Bahia");
+            window.open("https://api.whatsapp.com/send?text=" + text + "%20" + url, "popup", "width=600,height=400");
+            return false;
+        }
+
+        function shareOnTwitter() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("Muda de Cacau- Plantas da Bahia");
+            window.open("https://twitter.com/intent/tweet?url=" + url + "&text=" + text, "popup", "width=600,height=400");
+            return false;
+        }
+    </script>
+    
+
 </body>
 
 
