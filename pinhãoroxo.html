@@ -6,7 +6,6 @@
     <title>Pinhão Roxo 2 Mudas - Plantas da Bahia</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=YOUR_PROPERTY_KEY&product=sop' async='async'></script>
 </head>
 
 <body>
@@ -34,13 +33,9 @@
         Entre em contato pelo WhatsApp
     </a>
 
-    <!-- ShareThis BEGIN -->
-    <div class="sharethis-inline-share-buttons"></div>
-    <!-- ShareThis END -->
-    
     <!-- Social Media Icons -->
     <div style="margin-top: 20px;">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=URL_DO_SEU_SITE" target="_blank">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.exemplo.com/produto/pinhao-roxo" target="_blank">
             <img src="img/facebook-icon.png" alt="Facebook" style="width: 32px; height: 32px;">
         </a>
         <a href="https://www.instagram.com/seu_usuario" target="_blank">
@@ -49,7 +44,20 @@
         <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Olá!" target="_blank">
             <img src="img/whatsapp-icon.png" alt="WhatsApp" style="width: 32px; height: 32px;">
         </a>
+        <a href="#" onclick="shareOnTwitter()">
+            <img src="img/twitter-icon.png" alt="Twitter" style="width: 32px; height: 32px;">
+        </a>
     </div>
+
+    <!-- Share Script -->
+    <script>
+        function shareOnTwitter() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("Pinhão Roxo 2 Mudas - Plantas da Bahia");
+            window.open("https://twitter.com/intent/tweet?url=" + url + "&text=" + text, "popup", "width=600,height=400");
+            return false;
+        }
+    </script>
 </body>
 
 </html>
