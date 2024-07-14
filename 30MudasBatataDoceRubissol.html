@@ -1,0 +1,82 @@
+<!DOCTYPE >
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantas da Bahia - Produtos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Ol%C3%A1!" target="_blank">
+                <img src="img/whatsap emoji.png" alt="whatsapp" width="30">
+            </a>
+            <a href="https://www.instagram.com/plantasdabahia.com.br/?hl=pt-br" target="_blank">
+               <img src="img/R.png" alt="instagram" width="30">
+            </a>
+            <img src="img/OIP (5).jpeg" alt="Logo" width="30">
+        </div>
+
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+</header>      
+
+    <h1>30 Mudas Batata Doce Beauregard</h1>
+    <p>Preço 185,00</p>
+   <img src="img/bata bauregard.webp" alt="Muda de Batata Beauregard ">
+   <p>Características principais
+Nome da espécie
+Frutífera
+Tipo de planta
+Árvore
+Quantidade de plantas
+30
+Altura
+18 cm
+Outras características
+Ambientes
+Exterior
+Inclui vaso para planta
+Não</p>
+    <a href= "https://api.whatsapp.com/send?phone=+5573981135119&text=Olá!" target="_blank">Entre em contato pelo WhatsApp</a>
+
+     <!-- Social Media Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://plantasdabahia.com.br/30MudasBatataDoceBeauregard.html" target="_blank">
+           <img src="img/facebook_resized.jpeg" alt="Facebook" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnWhatsApp()">
+            <img src="img/whatsap emoji.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnTwitter()">
+            <img src="img/twiter_resized.jpeg" alt="Twitter" style="width: 32px; height: 32px;">
+        </a>
+    </div>
+
+    <script>
+        function shareOnWhatsApp() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("> 30 Mudas Batata Doce Beauregard- Plantas da Bahia");
+            window.open("https://api.whatsapp.com/send?text=" + text + "%20" + url, "popup", "width=600,height=400");
+            return false;
+        }
+
+        function shareOnTwitter() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("30 Mudas Batata Doce Beauregard- Plantas da Bahia");
+            window.open("https://twitter.com/intent/tweet?url=" + url + "&text=" + text, "popup", "width=600,height=400");
+            return false;
+        }
+    </script>
+
+
+</body>
+
+</html>
