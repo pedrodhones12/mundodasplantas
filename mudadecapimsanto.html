@@ -36,6 +36,34 @@
     <p>perene que pertence à família das gramíneas (Poaceae). Essa erva é amplamente cultivada em regiões tropicais e subtropicais</p>
    <p> de todo o mundo devido ao seu valor culinário, medicinal e aromático. </p>
    <p> Aqui está uma descrição geral das principais características do capim-santo:</p>
+     <!-- Social Media Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://plantasdabahia.com.br/5MudasDeHortel%C3%A3.html" target="_blank">
+           <img src="img/facebook_resized.jpeg" alt="Facebook" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnWhatsApp()">
+            <img src="img/whatsap emoji.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnTwitter()">
+            <img src="img/twiter_resized.jpeg" alt="Twitter" style="width: 32px; height: 32px;">
+        </a>
+    </div>
+
+    <script>
+        function shareOnWhatsApp() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent(">5 Mudas de Hortelã Pimenta - Plantas da Bahia");
+            window.open("https://api.whatsapp.com/send?text=" + text + "%20" + url, "popup", "width=600,height=400");
+            return false;
+        }
+
+        function shareOnTwitter() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("5 Mudas de Hortelã Pimenta- Plantas da Bahia");
+            window.open("https://twitter.com/intent/tweet?url=" + url + "&text=" + text, "popup", "width=600,height=400");
+            return false;
+        }
+    </script>
 </body>
 
 <!-- Rodapé -->
