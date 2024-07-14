@@ -36,6 +36,36 @@
         <p>Possui folhas verdes, tronco curto e fino, raízes que absorvem água e nutrientes, e cresce lentamente até se tornar uma majestosa árvore.</p>
         <p>As palmas podem produzir flores e frutos, variando de acordo com a espécie. Seu cultivo requer solo bem drenado, rega apropriada e luz solar adequada.</p>
         <p>São frequentemente usadas em paisagismo e como plantas ornamentais devido à sua aparência exótica.</p>
+      <!-- Social Media Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://plantasdabahia.com.br/mudadepalma.html" target="_blank">
+           <img src="img/facebook_resized.jpeg" alt="Facebook" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnWhatsApp()">
+            <img src="img/whatsap emoji.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnTwitter()">
+            <img src="img/twiter_resized.jpeg" alt="Twitter" style="width: 32px; height: 32px;">
+        </a>
+    </div>
+
+    <script>
+        function shareOnWhatsApp() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("> Muda de palma- Plantas da Bahia");
+            window.open("https://api.whatsapp.com/send?text=" + text + "%20" + url, "popup", "width=600,height=400");
+            return false;
+        }
+
+        function shareOnTwitter() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("Muda de palma- Plantas da Bahia");
+            window.open("https://twitter.com/intent/tweet?url=" + url + "&text=" + text, "popup", "width=600,height=400");
+            return false;
+        }
+    </script>
+
+
     </div>
 </main>
 
