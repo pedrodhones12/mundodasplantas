@@ -5,13 +5,21 @@
     <title>Plantas da Bahia - Produtos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-     <script src="cart.js" defer></script>
+    <script src="cart.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="index.html">Início</a>
+                    <ul class="dropdown-content">
+                        <li><a href="sementes.html">Sementes</a></li>
+                        <li><a href="mudas.html">Mudas</a></li>
+                        <li><a href="frutas.html">Frutas</a></li>
+                        <!-- Adicione mais categorias conforme necessário -->
+                    </ul>
+                </li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
@@ -160,8 +168,5 @@
             <li><a href="contato.html">Contato</a></li>
         </div>
     </footer>
-
-    <script src="cart.js"></script>
 </body>
 </html>
-
