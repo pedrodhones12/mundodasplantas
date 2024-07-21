@@ -162,18 +162,37 @@ button {
 
 /* Estilização do rodapé */
 footer {
-    background-color: #333;
     color: #fff;
-    padding: 20px;
     text-align: center;
 }
 
-.footer img {
+/* Rodapé Superior */
+.footer-top {
+    background-color: #4CAF50; /* Verde */
+    padding: 20px;
+}
+
+.footer-top p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Rodapé Inferior */
+.footer-bottom {
+    background-color: #007BFF; /* Azul */
+    padding: 10px;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
     margin: 0 10px;
 }
 
-/* Estilização dos links do rodapé */
-.footer a {
-    color: #fff;
-    text-decoration: none;
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom img {
+    margin: 0 10px;
 }
