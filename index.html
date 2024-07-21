@@ -71,102 +71,119 @@
         <div class="product-container">
             <div class="product-card">
                 <a href="5MudasDeHortelã.html">
-                    <img src="img/5 MudasDeHortelã.webp" alt="Muda de hortelã">
-                    <h1>5 Mudas de Hortelã Pimenta</h1>
-                </a>
-                <p>R$ 30,00</p>
-                <button onclick="addToCart(1, '5 Mudas de Hortelã Pimenta', 30.00)">Adicionar ao Carrinho</button>
+                    <img src="img/5 MudasDeHortelã.webp" alt="Muda
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantas da Bahia - Produtos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="index.html">Início</a>
+                    <ul class="dropdown-content">
+                        <li><a href="sementes.html">Sementes</a></li>
+                        <li><a href="mudas.html">Mudas</a></li>
+                        <li><a href="frutas.html">Frutas</a></li>
+                        <!-- Adicione mais categorias conforme necessário -->
+                    </ul>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Meio">
+        <div class="right">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar produtos...">
+                <button onclick="searchProducts()">Buscar</button>
+                <div class="cart">
+                    <a href="carrinho.html">
+                        <img src="img/carrinhodecompra_resized_resized.jpeg" alt="Carrinho de Compras" width="30">
+                        <span id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/novomodelopasta.jpeg" alt="Compre agora">
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="header-title">
+            <h1>NOVAS CATEGORIAS</h1>
+        </div>
+
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/30 Sementes De Feijão Mangalo.webp" alt="Sementes De Feijão Mangalo">
+                <h1>SEMENTES</h1>
             </div>
             <div class="product-card">
-                <a href="mudacacau.html">
-                    <img src="img/D_NQ_NP_701042-MLB49731972417_042022-O.webp" alt="Muda de cacau">
-                    <h1>Muda de Cacau</h1>
-                    <p> R$ 26,00</p>
-                </a>
-                <button onclick="addToCart(2, 'Muda de Cacau', 26.00)">Adicionar ao Carrinho</button>
+                <img src="img/2024bg.webp" alt="Mudas De Batata">
+                <h1>MUDAS DAS MAIS VARIADAS BATATAS</h1>
             </div>
             <div class="product-card">
-                <a href="mudadegoiaba.html">
-                    <img src="img/goiba.jpeg" alt="Muda de goiaba">
-                    <h1>Mudas de Goiaba</h1>
-                    <p> R$ 65,00</p>
-                </a>
-                <button onclick="addToCart(3, 'Mudas de Goiaba', 65.00)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <a href="mudademamão.html">
-                    <img src="img/muda de mamaõ.webp" alt="Muda de mamão">
-                    <h1>Uma Muda de Mamão</h1>
-                </a>
-                <p>R$ 28,00</p>
-                <button onclick="addToCart(4, 'Uma Muda de Mamão', 28.00)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <a href="30MudasBatataDoceRubissol.html">
-                    <img src="img/viveiromuda3rubissol.jpg" alt="Muda de Batata Doce">
-                    <h1>30 Mudas Batata Doce BRS Rubissol</h1>
-                    <p>R$ 60,00</p>
-                </a>
-                <button onclick="addToCart(5, '30 Mudas Batata Doce BRS Rubissol', 60.00)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <a href="mudadeaipim.html">
-                    <img src="img/mudadeaipim.jpg" alt="Muda de aipim">
-                    <h1>Muda de Aipim (Macaxeira)</h1>
-                    <p> R$ 160,00</p>
-                </a>
-                <button onclick="addToCart(6, 'Muda de Aipim (Macaxeira)', 160.00)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <a href="mudadecapimsanto.html">
-                    <img src="img/muda de capim santo.webp" alt="Muda de capim santo">
-                    <h1>Muda de Capim Santo</h1>
-                    <p>R$ 28,00</p>
-                </a>
-                <button onclick="addToCart(7, 'Muda de Capim Santo', 28.00)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <a href="mudadepalma.html">
-                    <img src="img/mudafolha.webp" alt="Mudas de Palma">
-                    <h1>15 Mudas de Palma</h1>
-                    <p> R$ 65,00</p>
-                </a>
-                <button onclick="addToCart(8, '15 Mudas de Palma', 65.00)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <a href="30MudasBatataDoceBeauregard.html">
-                    <img src="img/bata bauregard.webp" alt="Muda de Batata Beauregard">
-                    <h1>30 Mudas Batata Doce Beauregard</h1>
-                    <p>R$ 30,00</p>
-                </a>
-                <button onclick="addToCart(9, '30 Mudas Batata Doce Beauregard', 30.00)">Adicionar ao Carrinho</button>
+                <img src="img/limao.webp" alt="Limão">
+                <h1>Frutas</h1>
             </div>
         </div>
 
-        <div class="next-page">
-            <a href="index.html">&#8592; 1</a>
-            <a href="produtos2.html">&#8594; 2</a>
-            <a href="produto3.html">&#8594; 3</a>
+        <div class="header-title">
+            <h2>Nossos Produtos</h2>
+        </div>
+
+        <div class="product-container">
+            <div class="product-card">
+                <a href="5MudasDeHortelã.html">
+                    <img src="img/5 MudasDeHortelã.webp" alt="Mudas De Hortelã">
+                    <h1>5 Mudas De Hortelã</h1>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="MudasDeAlecrim.html">
+                    <img src="img/MudasDeAlecrim.webp" alt="Mudas De Alecrim">
+                    <h1>Mudas De Alecrim</h1>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="MudasDeManjericão.html">
+                    <img src="img/MudasDeManjericão.webp" alt="Mudas De Manjericão">
+                    <h1>Mudas De Manjericão</h1>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="SementesDeTomate.html">
+                    <img src="img/SementesDeTomate.webp" alt="Sementes De Tomate">
+                    <h1>Sementes De Tomate</h1>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="MudasDeMorango.html">
+                    <img src="img/MudasDeMorango.webp" alt="Mudas De Morango">
+                    <h1>Mudas De Morango</h1>
+                </a>
+            </div>
         </div>
     </section>
 
-    <footer class="blue-background">
-        <p>Desenvolvido por Construindo Sonhos Web</p>
+    <footer>
         <div class="header-top">
-            <p>CNPJ 10.303.722/0001-79</p>
+            <a href="https://wa.me/5591999999999"><img src="img/whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/seuusuario"><img src="img/instagram-icon.png" alt="Instagram"></a>
         </div>
-        <div class="header-top">
-            <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Ol%C3%A1!" target="_blank">
-                <img src="img/whatsap emoji.png" alt="whatsapp" width="30">
-            </a>
-            <a href="https://www.instagram.com/plantasdabahia.com.br/?hl=pt-br" target="_blank">
-               <img src="img/R.png" alt="instagram" width="30">
-            </a>
-            <img src="img/OIP (5).jpeg" alt="Logo" width="30">
-        </div>
-        <div class="header-top">
-            <li><a href="contato.html">Contato</a></li>
-        </div>
+        <p>&copy; 2024 Plantas da Bahia. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
+
+           
