@@ -166,18 +166,21 @@ footer {
     text-align: center;
 }
 
-/* Rodapé Superior */
 .footer-top {
     background-color: #4CAF50; /* Verde */
     padding: 20px;
 }
 
-.footer-top p {
-    margin: 0;
+.footer-top a {
     color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-/* Rodapé Inferior */
+.footer-top a:hover {
+    text-decoration: underline;
+}
+
 .footer-bottom {
     background-color: #007BFF; /* Azul */
     padding: 10px;
@@ -196,3 +199,4 @@ footer {
 .footer-bottom img {
     margin: 0 10px;
 }
+
