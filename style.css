@@ -1,57 +1,55 @@
-/* Reset de estilos padrão */
-body, h1, p {
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #FFFFFF;
-    color: #333;
-}
-
-/* Estilos do cabeçalho */
 header {
-    background-color: #00a550;
-    padding: 20px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-title {
-    text-align: center;
-    margin-top: 10px; /* Ajuste de margem se necessário */
+    background-color: #333;
+    color: #fff;
 }
 
 .nav-menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .nav-menu li {
-    display: inline;
+    display: inline-block;
+    position: relative;
 }
 
 .nav-menu a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
 }
 
-/* Dropdown Menu */
-.nav-menu .dropdown {
-    position: relative;
+.nav-menu li:hover {
+    background-color: #575757;
+}
+
+/* Estilização do menu dropdown */
+.dropdown {
     display: inline-block;
 }
 
-.nav-menu .dropdown-content {
+.dropbtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -60,77 +58,55 @@ header {
     z-index: 1;
 }
 
-.nav-menu .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.nav-menu .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-.nav-menu .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Estilos da barra de pesquisa */
-.search-bar {
-    text-align: center;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.dropdown:hover .dropbtn {
+    background-color: #575757;
 }
 
-.search-bar input {
+/* Estilização do corpo e dos produtos */
+.Meio {
+    padding: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
     padding: 10px;
-    width: 100%;
-    max-width: 400px; /* Aumenta a largura do campo de entrada */
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    font-size: 16px;
 }
 
 .search-bar button {
-    padding: 10px 20px;
-    background-color: #00a550;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.search-bar button:hover {
-    background-color: #007c3a;
-}
-
-.cart {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
 .cart img {
-    width: 30px;
-}
-
-#cartCount {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 14px;
-}
-
-/* Estilos da seção principal */
-.Meio {
-    text-align: center;
-    padding: 20px;
+    vertical-align: middle;
 }
 
 .imagem img {
@@ -138,124 +114,67 @@ header {
     height: auto;
 }
 
-/* Estilos das categorias e produtos */
 .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 20px;
-    padding: 20px;
+    justify-content: center;
 }
 
 .product-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: center;
-    width: 100%;
-    max-width: 200px; /* Define o tamanho máximo do cartão */
+    width: 200px;
 }
 
 .product-card img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 150px; /* Define a altura máxima da imagem */
-    object-fit: contain; /* Mantém a proporção da imagem */
 }
 
-.product-card h1, .product-card h3, .product-card p {
-    margin: 10px;
+.product-card h1 {
+    font-size: 16px;
 }
 
-.product-card .price {
-    color: green;
-    font-weight: bold;
+.product-card p {
+    font-size: 18px;
+    color: #333;
 }
 
-.product-card .add-to-cart {
-    background-color: #00a550;
-    color: white;
+button {
     padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.product-card .add-to-cart:hover {
-    background-color: #007c3a;
-}
-
-/* Estilos da página do carrinho */
-.cart-container {
-    padding: 20px;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.cart-item p {
-    margin: 5px 0;
-}
-
-.cart-item button {
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.cart-item button:hover {
-    background-color: darkred;
-}
-
+/* Estilização da paginação */
 .next-page {
     text-align: center;
     margin: 20px 0;
 }
 
 .next-page a {
-    margin: 0 10px;
     text-decoration: none;
-    color: #00a550;
-    font-weight: bold;
-}
-
-/* Estilos do rodapé */
-footer {
-    background-color: #FFFFFF; /* Fundo branco */
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
     color: #333;
+    padding: 10px;
 }
 
-.text-black {
-    color: #000; /* Define a cor do texto como preto */
+/* Estilização do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Media Queries para design responsivo */
-@media (max-width: 768px) {
-    .product-card {
-        max-width: 45%; /* Ajusta a largura dos cartões em tablets */
-    }
+.footer img {
+    margin: 0 10px;
 }
 
-@media (max-width: 480px) {
-    .product-card {
-        max-width: 100%; /* Ajusta a largura dos cartões em smartphones */
-    }
+/* Estilização dos links do rodapé */
+.footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
