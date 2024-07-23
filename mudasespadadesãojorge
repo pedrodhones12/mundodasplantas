@@ -28,35 +28,24 @@
     </header>
 
     <div class="Meio">
-        <div class="right">
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Buscar produtos...">
-                <button onclick="searchProducts()">Buscar</button>
-                <div class="cart">
-                    <a href="carrinho.html">
-                        <img src="img/carrinhodecompra_resized_resized.jpeg" alt="Carrinho de Compras" width="30">
-                        <span id="cartCount">0</span>
-                    </a>
-                </div>
-            </div>
+        
    
-                 </a>
+               </div>
    
-    <h1>200 Folhas Médias De Graviola Orgânicas (frescas) + Brinde</h1>
-    <img src="img/200folhasmédias.webp" alt="Muda de Batata">
-    <p class="price">R$ 35,00</p>
-    <h1>CHÁ DE FOLHAS DE GRAVIOLA (ENVIO RÁPIDO NO MESMO DIA DA COMPRA) FOLHAS ORGÂNICAS SEM AGROTÓXICO</h1>
-    <p>
-        Atenção: Para ter a garantia das folhas chegarem frescas e verdes, é importante escolher o frete por SEDEX (EXPRESSO).
-        Fretes por PAC (NORMAL) não tem nossa garantia, e pode correr o risco de não receber plenamente verdes ou frescas.
-        Efetue a compra por frete NORMAL, o comprador se responsabiliza e assume todos os riscos se a encomenda não chegar como deseja,
-        perdendo o direito legal de reclamação, troca ou devolução de acordo com o Código de Defesa do Consumidor para produtos perecíveis
-        / produtores orgânicos.
-    </p>
+    <h1/>10 Und Mudas Espada De São Jorgeh1>
+    <img src="img/espardadesaojorge.webp"alt="esparda de são jorge">
+    <p class="price">R$ 43,00</p>
+    <p>Enviamos para todo o território brasileiro. Sempre embaladas de forma que não tenhamos nenhum problema com o envio, de forma segura
+São sempre escolhidas as mudas mais bonitas e com maior quantidade de folhas possíveis. Podendo ter pequenas variações na coloração e comprimento das mesmas.
+Produção familiar e sempre tratadas com somente produtos orgânicos.
+Para maiores informações ou dúvidas, basta entrar em contato que em pouco tempo retornaremos.</p>
     <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Olá!" target="_blank">Entre em contato pelo WhatsApp</a>
     <!-- Social Media Icons -->
     <div style="margin-top: 20px;">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://plantasdabahia.com.br/200folhasm%C3%A9dias.html" target="_blank">
+        <a href="https://www.facebook10 mudas de espada de São Jorge enraizadas acima de 50 cm de comprimento.
+
+
+.com/sharer/sharer.php?u=https://plantasdabahia.com.br/200folhasm%C3%A9dias.html" target="_blank">
             <img src="img/facebook_resized.jpeg" alt="Facebook" style="width: 32px; height: 32px;">
         </a>
         <a href="#" onclick="shareOnWhatsApp()">
