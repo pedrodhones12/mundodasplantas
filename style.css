@@ -10,6 +10,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
+    padding: 10px 0;
 }
 
 .nav-menu {
@@ -152,6 +153,7 @@ header {
 
 .product-card h1 {
     font-size: 16px;
+    margin: 10px 0;
 }
 
 .product-card p {
@@ -214,6 +216,7 @@ footer {
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin: 20px 0;
 }
 
 .carousel-track {
@@ -224,11 +227,13 @@ footer {
 .carousel-card {
     min-width: 100%;
     box-sizing: border-box;
+    transition: transform 0.5s ease;
 }
 
 .carousel-card img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .carousel-buttons {
