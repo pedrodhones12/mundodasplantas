@@ -280,18 +280,4 @@ footer {
     line-height: 1.5;
 }
 
-.explore-button {
-    background-color: #fff;
-    color: #5cb85c;
-    border: none;
-    padding: 18px 36px;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.explore-button:hover {
-    background-color: #4cae4c;
-    color: white;
-}
