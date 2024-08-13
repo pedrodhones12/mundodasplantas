@@ -259,8 +259,8 @@ footer {
 }
 /* Estilização da seção de boas-vindas */
 .welcome-section {
-    background-color: #5cb85c;
-    color: white;
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Texto preto */
     text-align: center;
     padding: 60px 20px;
     border-radius: 10px;
@@ -279,5 +279,6 @@ footer {
     margin-bottom: 35px;
     line-height: 1.5;
 }
+
 
 
