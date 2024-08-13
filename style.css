@@ -1,3 +1,4 @@
+
 /* Estilização geral */
 body {
     font-family: Arial, sans-serif;
@@ -258,14 +259,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Estilização do cabeçalho e menu de navegação */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-
 /* Estilização da seção de boas-vindas */
 .welcome-section {
     background-color: #ffffff; /* Fundo branco */
@@ -288,6 +281,5 @@ header {
     margin-bottom: 35px;
     line-height: 1.5;
 }
-
 
 
