@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantas da Bahia - Produtos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">=</a>
+                    <div class="dropdown-content">
+                        <a href="sementes.html">Sementes</a>
+                        <a href="mudas.html">Mudas</a>
+                        <a href="frutas.html">Frutas</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+    <img src="img/mudademorango.webp" alt="Muda de Morango">
+    <h1>Muda de Morango.</h1>
+    <p>Preço: R$ 38,00</p>
+
+
+
+<p>A fruta usada em muitos doces, bolos e iguarias da cozinha. O morango, de fácil cultivo ideais em praticamente todos os solos (é claro que para uma produção pequena em casas e até mesmo apartamentos). </p>
+    <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Olá!" target="_blank">Entre em contato pelo WhatsApp</a>
+</body>
+    
+    <!-- Social Media Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://plantasdabahia.com.br/mudademorango.html" target="_blank">
+           <img src="img/facebook_resized.jpeg" alt="Facebook" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnWhatsApp()">
+            <img src="img/whatsap emoji.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnTwitter()">
+            <img src="img/twiter_resized.jpeg" alt="Twitter" style="width: 32px; height: 32px;">
+        </a>
+    </div>
+     </div> 
+<script>
+        function shareOnWhatsApp() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("> Muda de Morango- Plantas da Bahia");
+            window.open("https://api.whatsapp.com/send?text=" + text + "%20" + url, "popup", "width=600,height=400");
+            return false;
+        }
+
+        function shareOnTwitter() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("Muda de Morango- Plantas da Bahia");
+            window.open("https://twitter.com/intent/tweet?url=" + url + "&text=" + text, "popup", "width=600,height=400");
+            return false;
+        }
+    </script>
+    
+</section>
+
+    <footer>
+        <div class="footer-top">
+            <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Ol%C3%A1!" target="_blank">
+                <img src="img/whatsap emoji.png" alt="whatsapp" width="30">
+            </a>
+            <a href="https://www.instagram.com/plantasdabahia.com.br/?hl=pt-br" target="_blank">
+                <img src="img/R.png" alt="instagram" width="30">
+            </a>
+            <img src="img/OIP (5).jpeg" alt="Logo" width="30">
+            <a href="contato.html">Contato</a>
+            <p>Desenvolvido por Construindo Sonhos Web</p>
+            <p>CNPJ 10.303.722/0001-79</p>
+        </div>
+    </footer>
+ <script src="carousel.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
