@@ -1,4 +1,6 @@
-// cart.js
+
+// Inicialize o carrinho a partir do localStorage ou como um array vazio
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Função para adicionar item ao carrinho
 function addToCart(id, name, price) {
@@ -17,7 +19,7 @@ function addToCart(id, name, price) {
 function loadCartItems() {
     let cartItemsContainer = document.getElementById('cartItems');
     if (!cartItemsContainer) return;
-    
+
     cartItemsContainer.innerHTML = '';
 
     cart.forEach(item => {
@@ -61,12 +63,20 @@ function checkout() {
     calculateTotal();
     updateCartCount();
 }
+
+// Função para atualizar o contador do carrinho
+function updateCartCount() {
+    let cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+    document.getElementById('cartCount').textContent = cartCount;
+}
+
+// Função para buscar produtos
 function searchProducts() {
     const input = document.getElementById('searchInput').value.toLowerCase();
     const productCards = document.querySelectorAll('.product-card');
 
     productCards.forEach(card => {
-        const productName = card.querySelector('h1, h3, p').textContent.toLowerCase();
+        const productName = card.querySelector('h1').textContent.toLowerCase();
         if (productName.includes(input)) {
             card.style.display = '';
         } else {
@@ -75,13 +85,9 @@ function searchProducts() {
     });
 }
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4KVVZEJN2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N4KVVZEJN2');
-</script>
+// Chama as funções necessárias ao carregar a página
+window.onload = function() {
+    updateCartCount();
+    loadCartItems();
+    calculateTotal();
+};
