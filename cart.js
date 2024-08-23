@@ -1,20 +1,5 @@
 // cart.js
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-// Atualizar contagem de itens no carrinho
-function updateCartCount() {
-    let totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
-    document.getElementById('cartCount').innerText = totalQuantity;
-}
-
-// Carregar itens do carrinho ao carregar a página
-window.onload = function() {
-    loadCartItems();
-    calculateTotal();
-    updateCartCount();
-};
-
 // Função para adicionar item ao carrinho
 function addToCart(id, name, price) {
     const existingItem = cart.find(item => item.id === id);
