@@ -1,3 +1,5 @@
+// Inicialize o carrinho a partir do localStorage ou como um array vazio
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 window.onload = function() {
     console.log('Página carregada');
@@ -72,4 +74,6 @@ function updateCartCount() {
         cartCountElement.textContent = cartCount;
     }
 }
+
+
 
