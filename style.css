@@ -283,7 +283,7 @@ footer {
 }
 
 .imagem-reduzida {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
+    width: 500px; /* Ajuste o tamanho conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
 }
 
