@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadCartItems();
     calculateTotal();
+    updateCartCount();
 
     document.getElementById('checkoutButton').addEventListener('click', checkout);
 });
@@ -11,6 +12,11 @@ function loadCartItems() {
     if (!cartItemsContainer) return;
 
     cartItemsContainer.innerHTML = ''; // Limpar o conteúdo existente
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Seu carrinho está vazio.</p>';
+        return;
+    }
 
     cart.forEach(item => {
         const itemElement = document.createElement('div');
@@ -40,6 +46,16 @@ function removeFromCart(id) {
     localStorage.setItem('cart', JSON.stringify(cart));
     loadCartItems();
     calculateTotal();
+    updateCartCount();
+}
+
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const cartCountElement = document.getElementById('cartCount');
+    if (cartCountElement) {
+        cartCountElement.innerText = cartCount;
+    }
 }
 
 function checkout() {
@@ -48,7 +64,7 @@ function checkout() {
     window.open(whatsappLink, '_blank');
     localStorage.removeItem('cart'); // Limpar o carrinho após a finalização
     loadCartItems(); // Atualizar a visualização do carrinho
-    calculateTotal();
+    calculateTotal(); // Atualizar o total após a limpeza
 }
 
 
