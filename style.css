@@ -287,4 +287,16 @@ footer {
     height: auto; /* Mantém a proporção da imagem */
 }
 
+.header-logo {
+    height: 50px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 
