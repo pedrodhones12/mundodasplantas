@@ -315,6 +315,7 @@ footer {
         width: 150px;
     }
 }
+
 .cart-item {
     display: flex;
     align-items: center;
@@ -331,4 +332,3 @@ footer {
 .cart-item span {
     flex: 1;
 }
-
