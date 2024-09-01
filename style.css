@@ -315,4 +315,20 @@ footer {
         width: 150px;
     }
 }
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item span {
+    flex: 1;
+}
 
