@@ -15,7 +15,7 @@
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Produtos</a>
+                    <a href="javascript:void(0)" class="dropbtn">=</a>
                     <div class="dropdown-content">
                         <a href="sementes.html">Sementes</a>
                         <a href="mudas.html">Mudas</a>
@@ -23,163 +23,170 @@
                     </div>
                 </li>
             </ul>
-            <img src="img/WhatsApp Image 2024-08-28 at 11.16.46_resized.jpeg" alt="Logo" class="header-logo">
+            <!-- Logo no Cabeçalho -->
+        <img src="img/WhatsApp Image 2024-08-28 at 11.16.46_resized.jpeg" alt="Logo" class="header-logo">
         </nav>
     </header>
     
-    <div class="main-content">
-        <div class="search-cart">
+    <div class="Meio">
+        <div class="right">
             <div class="search-bar">
                 <input type="text" id="searchInput" placeholder="Buscar produtos...">
                 <button onclick="searchProducts()">Buscar</button>
-            </div>
-            <div class="cart">
-                <a href="carrinho.html">
-                    <img src="img/carrinhodecompra_resized_resized.jpeg" alt="Carrinho de Compras" width="30">
-                    <span id="cartCount">0</span>
-                </a>
-            </div>
-        </div>
-        <div class="welcome-section">
-            <h1>Bem-vindo a Plantas da Bahia!</h1>
-            <p>Enviamos para todo o Brasil! Temos mudas de batata, banana, folhas de chás e ervas. Nossa variedade conta com mais de 80 espécies diferentes! Explore Agora</p>
-        </div>
-
-        <!-- Carrossel de Imagens -->
-        <div class="imagem">
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="carousel-card">
-                        <img src="img/novomodelopasta.jpeg" alt="Compre agora">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="img/D_NQ_NP_701042-MLB49731972417_042022-O.webp" alt="Muda de cacau">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="img/Mudas de alta qualidade (1).png" alt="Muda de goiaba">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="img/muda de mamaõ.webp" alt="Muda de mamão">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="img/viveiromuda3rubissol.jpg" alt="Muda de Batata Doce">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="img/Frutas.png" alt="Muda de aipim">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="img/muda de capim santo.webp" alt="Muda de capim santo">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="img/mudafolha.webp" alt="Mudas de Palma">
-                    </div> 
-                </div>
-                <div class="carousel-buttons">
-                    <button id="prevBtn">❮</button>
-                    <button id="nextBtn">❯</button>
+                <div class="cart">
+                    <a href="carrinho.html">
+                        <img src="img/carrinhodecompra_resized_resized.jpeg" alt="Carrinho de Compras" width="30">
+                        <span id="cartCount">0</span>
+                    </a>
                 </div>
             </div>
-        </div>
+            <div class="welcome-section">
+    <h1>Bem-vindo a Plantas da Bahia!</h1>
+    <p>Enviamos para todo o Brasil! Temos mudas de batata, banana, folhas de chás e ervas. Nossa variedade conta com mais de 80 espécies diferentes!</p>
+            <p>Explore Agora</p>
+</div>
+            <!-- Carrossel de Imagens -->
+            <div class="imagem">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-card">
+                             <img src="img/novomodelopasta.jpeg" alt="Compre agora">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="img/D_NQ_NP_701042-MLB49731972417_042022-O.webp" alt="Muda de cacau">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="img/Mudas de alta qualidade (1).png" alt="Muda de goiaba">
+                          
+                        </div>
+                        <div class="carousel-card">
+                            <img src="img/muda de mamaõ.webp" alt="Muda de mamão">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="img/viveiromuda3rubissol.jpg" alt="Muda de Batata Doce">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="img/Frutas.png" alt="Muda de aipim">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="img/muda de capim santo.webp" alt="Muda de capim santo">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="img/mudafolha.webp" alt="Mudas de Palma">
+                        </div> 
+                    </div>
+                     <div class="carousel-buttons">
+        <button id="prevBtn">❮</button>
+        <button id="nextBtn">❯</button>
+                         </div>
+</div>
                   
-        <section>
-            <div class="header-title">
-                <h2>Nossos Produtos</h2>
-            </div>
+              
+    <section>
 
-            <div class="product-container">
-                <div class="product-card">
-                    <a href="5MudasDeHortelã.html">
-                        <img src="img/5 MudasDeHortelã.webp" alt="Muda de hortelã">
-                        <h1>5 Mudas de Hortelã Pimenta</h1>
-                    </a>
-                    <p>R$ 30,00</p>
-                    <button class="add-to-cart-btn" onclick="addToCart(1, '5 Mudas de Hortelã Pimenta', 30.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="mudacacau.html">
-                        <img src="img/D_NQ_NP_701042-MLB49731972417_042022-O.webp" alt="Muda de cacau">
-                        <h1>Muda de Cacau</h1>
-                        <p> R$ 26,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(2, 'Muda de Cacau', 26.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="mudadegoiaba.html">
-                        <img src="img/goiba.jpeg" alt="Muda de goiaba">
-                        <h1>Mudas de Goiaba</h1>
-                        <p> R$ 65,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(3, 'Mudas de Goiaba', 65.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="mudademamão.html">
-                        <img src="img/muda de mamaõ.webp" alt="Muda de mamão">
-                        <h1>Uma Muda de Mamão</h1>
-                    </a>
-                    <p>R$ 28,00</p>
-                    <button class="add-to-cart-btn" onclick="addToCart(4, 'Uma Muda de Mamão', 28.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="30MudasBatataDoceRubissol.html">
-                        <img src="img/viveiromuda3rubissol.jpg" alt="Muda de Batata Doce">
-                        <h1>30 Mudas Batata Doce BRS Rubissol</h1>
-                        <p>R$ 60,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(5, '30 Mudas Batata Doce BRS Rubissol', 60.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="mudadeaipim.html">
-                        <img src="img/mudadeaipim.jpg" alt="Muda de aipim">
-                        <h1>Muda de Aipim (Macaxeira)</h1>
-                        <p> R$ 160,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(6, 'Muda de Aipim (Macaxeira)', 160.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="mudadecapimsanto.html">
-                        <img src="img/muda de capim santo.webp" alt="Muda de capim santo">
-                        <h1>Muda de Capim Santo</h1>
-                        <p>R$ 28,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(7, 'Muda de Capim Santo', 28.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="mudadepalma.html">
-                        <img src="img/mudafolha.webp" alt="Mudas de Palma">
-                        <h1>15 Mudas de Palma</h1>
-                        <p> R$ 65,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(8, '15 Mudas de Palma', 65.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="30MudasBatataDoceBeauregard.html">
-                        <img src="img/bata bauregard.jpg" alt="Muda de Batata Beauregard">
-                        <h1>30 Mudas Batata Doce BRS Beauregard</h1>
-                        <p> R$ 60,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(9, '30 Mudas Batata Doce BRS Beauregard', 60.00)">Adicionar ao Carrinho</button>
-                </div>
-                <div class="product-card">
-                    <a href="7MudasAlface.html">
-                        <img src="img/alface americana .jpeg" alt="Muda de Alface">
-                        <h1>7 Mudas de Alface</h1>
-                        <p> R$ 10,00</p>
-                    </a>
-                    <button class="add-to-cart-btn" onclick="addToCart(10, '7 Mudas de Alface', 10.00)">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </section>
+    <div class="header-title">
+        <h2>Nossos Produtos</h2>
+    </div>
+
+    <div class="product-container">
+        <div class="product-card">
+            <a href="5MudasDeHortelã.html">
+                <img src="img/5 MudasDeHortelã.webp" alt="Muda de hortelã">
+                <h1>5 Mudas de Hortelã Pimenta</h1>
+            </a>
+            <p>R$ 30,00</p>
+            <button onclick="addToCart(1, '5 Mudas de Hortelã Pimenta', 30.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="mudacacau.html">
+                <img src="img/D_NQ_NP_701042-MLB49731972417_042022-O.webp" alt="Muda de cacau">
+                <h1>Muda de Cacau</h1>
+                <p> R$ 26,00</p>
+            </a>
+            <button onclick="addToCart(2, 'Muda de Cacau', 26.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="mudadegoiaba.html">
+                <img src="img/goiba.jpeg" alt="Muda de goiaba">
+                <h1>Mudas de Goiaba</h1>
+                <p> R$ 65,00</p>
+            </a>
+            <button onclick="addToCart(3, 'Mudas de Goiaba', 65.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="mudademamão.html">
+                <img src="img/muda de mamaõ.webp" alt="Muda de mamão">
+                <h1>Uma Muda de Mamão</h1>
+            </a>
+            <p>R$ 28,00</p>
+            <button onclick="addToCart(4, 'Uma Muda de Mamão', 28.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="30MudasBatataDoceRubissol.html">
+                <img src="img/viveiromuda3rubissol.jpg" alt="Muda de Batata Doce">
+                <h1>30 Mudas Batata Doce BRS Rubissol</h1>
+                <p>R$ 60,00</p>
+            </a>
+            <button onclick="addToCart(5, '30 Mudas Batata Doce BRS Rubissol', 60.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="mudadeaipim.html">
+                <img src="img/mudadeaipim.jpg" alt="Muda de aipim">
+                <h1>Muda de Aipim (Macaxeira)</h1>
+                <p> R$ 160,00</p>
+            </a>
+            <button onclick="addToCart(6, 'Muda de Aipim (Macaxeira)', 160.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="mudadecapimsanto.html">
+                <img src="img/muda de capim santo.webp" alt="Muda de capim santo">
+                <h1>Muda de Capim Santo</h1>
+                <p>R$ 28,00</p>
+            </a>
+            <button onclick="addToCart(7, 'Muda de Capim Santo', 28.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="mudadepalma.html">
+                <img src="img/mudafolha.webp" alt="Mudas de Palma">
+                <h1>15 Mudas de Palma</h1>
+                <p> R$ 65,00</p>
+            </a>
+            <button onclick="addToCart(8, '15 Mudas de Palma', 65.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <a href="30MudasBatataDoceBeauregard.html">
+                <img src="img/bata bauregard.webp" alt="Muda de Batata Beauregard">
+                <h1>30 Mudas Batata Doce Beauregard</h1>
+                <p>R$ 30,00</p>
+            </a>
+            <button onclick="addToCart(9, '30 Mudas Batata Doce Beauregard', 30.00)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="next-page">
+       
+        <a href="produtos2.html">&#8594; 2</a>
+       
     </div>
 
     <footer>
-        <p>© 2024 Plantas da Bahia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="https://www.instagram.com/plantasdabahia" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/plantasdabahia" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-            <a href="https://api.whatsapp.com/send?phone=551234567890" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+        <div class="footer-top">
+            <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Ol%C3%A1!" target="_blank">
+                <img src="img/whatsap emoji.png" alt="whatsapp" width="30">
+            </a>
+            <a href="https://www.instagram.com/plantasdabahia.com.br/?hl=pt-br" target="_blank">
+                <img src="img/R.png" alt="instagram" width="30">
+            </a>
+            <img src="img/OIP (5).jpeg" alt="Logo" width="30">
+            <a href="contato.html">Contato</a>
+            <p>Desenvolvido por Construindo Sonhos Web</p>
+            <p>CNPJ 10.303.722/0001-79</p>
         </div>
     </footer>
+ <script src="carousel.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
+      
 
 
