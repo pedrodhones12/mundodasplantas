@@ -2,36 +2,45 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="cart.js" defer></script>
+    <title>Carrinho - Plantas da Bahia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
+        <!-- Seu cabeçalho -->
     </header>
     
     <main>
-        <h1>Seu Carrinho de Compras</h1>
-        <div id="cartItems">
-            <!-- Os itens do carrinho serão renderizados aqui -->
+        <h1>Carrinho</h1>
+        <div id="carrinho">
+            <!-- Produtos do carrinho serão inseridos aqui -->
         </div>
-        <div id="cartTotal">
-            <!-- O total será atualizado aqui -->
-        </div>
-        <button id="checkoutButton">Finalizar Compra</button>
     </main>
     
     <footer>
-        <p>&copy; 2024 Plantas da Bahia. Todos os direitos reservados.</p>
+        <!-- Seu rodapé -->
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const carrinhoDiv = document.getElementById('carrinho');
+            
+            cart.forEach(item => {
+                const produtoDiv = document.createElement('div');
+                produtoDiv.classList.add('produto-carrinho');
+                
+                produtoDiv.innerHTML = `
+                    <img src="${item.image}" alt="Imagem do Produto" width="100">
+                    <p>ID do Produto: ${item.id}</p>
+                `;
+                
+                carrinhoDiv.appendChild(produtoDiv);
+            });
+        });
+    </script>
 </body>
 </html>
+
 
