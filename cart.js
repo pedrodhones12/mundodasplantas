@@ -1,6 +1,8 @@
 // Código do carrinho de compras
-let cart = [];
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let cartCountElement = document.getElementById('cartCount');
+let cartTotalElement = document.getElementById('cartTotal');
+let cartItemsElement = document.getElementById('cartItems');
 
 function addToCart(id, name, price, image) {
     const product = { id, name, price, image, quantity: 1 };
@@ -14,16 +16,20 @@ function addToCart(id, name, price, image) {
     
     updateCartCount();
     displayCartItems();
+    saveCart();
 }
 
 function updateCartCount() {
     const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
-    cartCountElement.textContent = cartCount;
+    if (cartCountElement) {
+        cartCountElement.textContent = cartCount;
+    }
 }
 
 function displayCartItems() {
-    const cartContainer = document.getElementById('cartItems');
-    cartContainer.innerHTML = '';
+    if (!cartItemsElement) return;
+
+    cartItemsElement.innerHTML = '';
     
     cart.forEach(product => {
         const itemElement = document.createElement('div');
@@ -33,8 +39,13 @@ function displayCartItems() {
             <span>${product.name} - R$ ${product.price.toFixed(2)} x ${product.quantity}</span>
             <button onclick="removeFromCart(${product.id})">Remover</button>
         `;
-        cartContainer.appendChild(itemElement);
+        cartItemsElement.appendChild(itemElement);
     });
+
+    const total = cart.reduce((sum, product) => sum + product.price * product.quantity, 0);
+    if (cartTotalElement) {
+        cartTotalElement.textContent = `Total: R$ ${total.toFixed(2)}`;
+    }
 }
 
 function removeFromCart(id) {
@@ -51,9 +62,17 @@ function removeFromCart(id) {
         
         updateCartCount();
         displayCartItems();
+        saveCart();
     }
 }
 
-// Inicializar contagem do carrinho
-updateCartCount();
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Inicializar contagem e itens do carrinho na página de carregamento
+document.addEventListener('DOMContentLoaded', () => {
+    updateCartCount();
+    displayCartItems();
+});
 
