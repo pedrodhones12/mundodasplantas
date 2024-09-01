@@ -2,8 +2,8 @@
 let cart = [];
 let cartCountElement = document.getElementById('cartCount');
 
-function addToCart(id, name, price) {
-    const product = { id, name, price, quantity: 1 };
+function addToCart(id, name, price, image) {
+    const product = { id, name, price, image, quantity: 1 };
     const existingProduct = cart.find(item => item.id === id);
     
     if (existingProduct) {
@@ -29,6 +29,7 @@ function displayCartItems() {
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
         itemElement.innerHTML = `
+            <img src="${product.image}" alt="${product.name}" class="cart-item-image">
             <span>${product.name} - R$ ${product.price.toFixed(2)} x ${product.quantity}</span>
             <button onclick="removeFromCart(${product.id})">Remover</button>
         `;
@@ -55,5 +56,4 @@ function removeFromCart(id) {
 
 // Inicializar contagem do carrinho
 updateCartCount();
-
 
