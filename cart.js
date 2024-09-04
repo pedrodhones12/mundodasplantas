@@ -1,3 +1,63 @@
+document.addEventListener('DOMContentLoaded', () => {
+    loadCartItems();
+    calculateTotal();
+    updateCartCount();
+
+    document.getElementById('checkoutButton').addEventListener('click', checkout);
+});
+
+function loadCartItems() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsContainer = document.getElementById('cartItems');
+    if (!cartItemsContainer) return;
+
+    cartItemsContainer.innerHTML = ''; // Limpar o conteúdo existente
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Seu carrinho está vazio.</p>';
+        return;
+    }
+
+    cart.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('cart-item');
+        itemElement.innerHTML = `
+            <p>${item.name}</p>
+            <p>Preço: R$ ${item.price.toFixed(2)}</p>
+            <p>Quantidade: ${item.quantity}</p>
+            <button onclick="removeFromCart(${item.id})">Remover</button>
+        `;
+        cartItemsContainer.appendChild(itemElement);
+    });
+}
+
+function calculateTotal() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const totalPriceElement = document.getElementById('cartTotal');
+    if (totalPriceElement) {
+        totalPriceElement.innerHTML = <h2>Total: R$ ${total.toFixed(2)}</h2>;
+    }
+}
+
+function removeFromCart(id) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart = cart.filter(item => item.id !== id);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    loadCartItems();
+    calculateTotal();
+    updateCartCount();
+}
+
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const cartCountElement = document.getElementById('cartCount');
+    if (cartCountElement) {
+        cartCountElement.innerText = cartCount;
+    }
+}
+
 function showNotification(message) {
     const notification = document.getElementById('notification');
     if (!notification) return;
