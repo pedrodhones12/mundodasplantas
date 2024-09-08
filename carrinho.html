@@ -51,7 +51,7 @@
                     produtoDiv.classList.add('produto-carrinho');
                     
                     produtoDiv.innerHTML = `
-                        <img src="${item.image}" alt="${item.name}" width="100">
+                        <img src="img/${item.image}" alt="${item.name}" width="100">
                         <p><strong>Produto:</strong> ${item.name}</p>
                         <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
                         <p><strong>Quantidade:</strong> 
@@ -117,3 +117,4 @@
     </script>
 </body>
 </html>
+
