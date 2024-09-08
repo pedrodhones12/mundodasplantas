@@ -15,13 +15,11 @@
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">=</a>
-              <div class="dropdown-content">
+                    <a href="javascript:void(0)" class="dropbtn">=</a>
+                    <div class="dropdown-content">
                         <a href="sementes.html">Sementes</a>
                         <a href="mudas.html">Mudas</a>
                         <a href="frutas.html">Frutas</a>
-                        <!-- Adicione mais categorias conforme necessário -->
-                    </div>
                     </div>
                 </li>
             </ul>
@@ -33,31 +31,89 @@
         <div id="carrinho">
             <!-- Produtos do carrinho serão inseridos aqui -->
         </div>
+        <button id="limparCarrinho">Limpar Carrinho</button>
+        <button id="finalizarCompra">Finalizar Compra</button>
     </main>
     
     <footer>
         <!-- Seu rodapé -->
     </footer>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
             const carrinhoDiv = document.getElementById('carrinho');
-            
-            cart.forEach(item => {
-                const produtoDiv = document.createElement('div');
-                produtoDiv.classList.add('produto-carrinho');
+
+            function renderCart() {
+                carrinhoDiv.innerHTML = ''; // Limpa o carrinho antes de renderizar
+                cart.forEach((item, index) => {
+                    const produtoDiv = document.createElement('div');
+                    produtoDiv.classList.add('produto-carrinho');
+                    
+                    produtoDiv.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}" width="100">
+                        <p><strong>Produto:</strong> ${item.name}</p>
+                        <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
+                        <p><strong>Quantidade:</strong> 
+                            <button class="diminuir" data-index="${index}">-</button> 
+                            ${item.quantity} 
+                            <button class="aumentar" data-index="${index}">+</button>
+                        </p>
+                    `;
+                    
+                    carrinhoDiv.appendChild(produtoDiv);
+                });
+            }
+
+            // Renderiza o carrinho quando a página carrega
+            renderCart();
+
+            // Aumenta a quantidade do produto
+            carrinhoDiv.addEventListener('click', function(event) {
+                if (event.target.classList.contains('aumentar')) {
+                    const index = event.target.dataset.index;
+                    cart[index].quantity += 1;
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    renderCart();
+                } else if (event.target.classList.contains('diminuir')) {
+                    const index = event.target.dataset.index;
+                    if (cart[index].quantity > 1) {
+                        cart[index].quantity -= 1;
+                    } else {
+                        cart.splice(index, 1); // Remove o produto se a quantidade for 0
+                    }
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    renderCart();
+                }
+            });
+
+            // Função para limpar o carrinho
+            document.getElementById('limparCarrinho').addEventListener('click', function() {
+                localStorage.removeItem('cart');
+                carrinhoDiv.innerHTML = ''; // Limpa o HTML do carrinho
+            });
+
+            // Função para finalizar a compra via WhatsApp
+            document.getElementById('finalizarCompra').addEventListener('click', function() {
+                if (cart.length === 0) {
+                    alert('O carrinho está vazio.');
+                    return;
+                }
+
+                let mensagem = 'Olá, gostaria de finalizar a compra dos seguintes itens:\n\n';
+                let total = 0;
+
+                cart.forEach(item => {
+                    mensagem += `*${item.name}* - Quantidade: ${item.quantity} - Preço: R$ ${item.price.toFixed(2)}\n`;
+                    total += item.price * item.quantity;
+                });
+
+                mensagem += `\n*Total: R$ ${total.toFixed(2)}*\n`;
+                const whatsappUrl = `https://wa.me/5573981135119?text=${encodeURIComponent(mensagem)}`;
                 
-                produtoDiv.innerHTML = `
-                    <img src="${item.image}" alt="Imagem do Produto" width="100">
-                    <p>ID do Produto: ${item.id}</p>
-                `;
-                
-                carrinhoDiv.appendChild(produtoDiv);
+                window.open(whatsappUrl, '_blank');
             });
         });
     </script>
 </body>
 </html>
-
-
