@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Lista de produtos
     const exampleItems = [
-        { id: ' image: 'bata bauregard.webp' },
-        { id: ' image: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp' },
-        { id: ' image: 'img/muda de mamaõ.webp' },
-        { id:  'img/produto4.webp' },
+        { id: 'bata bauregard.webp', },
+        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp',  },
+        { id: 'img/muda de mamaõ.webp',  },
+        { id: 'img/produto4.webp',  },
+        { id: 'img/viveiromuda3rubissol.jpg',  },
+        { id: 'img/mudadeaipim.jpg',  },
+        { id: 'img/muda de capim',  },
+        { id: 'img/bata bauregard.webp',  },
+        { id: 'img/mudafolha.webpsanto.webp', }
         // Adicione os demais produtos conforme necessário
     ];
 
@@ -29,12 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const produtoDiv = document.createElement('div');
             produtoDiv.classList.add('produto-carrinho');
 
-            const imagePath = item.image.startsWith('img/') ? item.image : 'img/' + item.image;
+            const imagePath = item.id.startsWith('img/') ? item.id : 'img/' + item.id;
 
             produtoDiv.innerHTML = `
-                <img src="${imagePath}" alt="${item.name}" width="100">
-                <p><strong>Produto:</strong> ${item.name}</p>
-                <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
+                <img src="${imagePath}" alt="Produto" width="100">
                 <p><strong>Quantidade:</strong> 
                     <button class="diminuir" data-index="${index}">-</button> 
                     ${item.quantity} 
@@ -123,4 +126,5 @@ document.addEventListener('DOMContentLoaded', function() {
         finalizePurchaseButton.addEventListener('click', finalizePurchase);
     }
 });
+
 
