@@ -46,6 +46,10 @@
 
             function renderCart() {
                 carrinhoDiv.innerHTML = ''; // Limpa o carrinho antes de renderizar
+                if (cart.length === 0) {
+                    carrinhoDiv.innerHTML = '<p>O carrinho está vazio.</p>';
+                    return;
+                }
                 cart.forEach((item, index) => {
                     const produtoDiv = document.createElement('div');
                     produtoDiv.classList.add('produto-carrinho');
@@ -91,6 +95,7 @@
                 localStorage.removeItem('cart');
                 cart = []; // Limpa o array do carrinho
                 renderCart(); // Atualiza o HTML do carrinho
+                alert("Carrinho limpo com sucesso.");
             });
 
             // Função para finalizar a compra via WhatsApp
@@ -117,3 +122,4 @@
     </script>
 </body>
 </html>
+
