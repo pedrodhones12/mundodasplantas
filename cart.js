@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lista de exemplos com imagens e nomes para adicionar mais tarde
     const exampleItems = [
         { id: '1', name: 'Bata Bauregard', price: 29.90, quantity: 1, image: 'bata bauregard.webp' },
-        { id: '2', name: 'Produto 2', price: 19.90, quantity: 1, image: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp' },
-        { id: '3', name: 'Produto 3', price: 39.90, quantity: 1, image: 'produto3.webp' },
+        { id: '2', name: 'Muda de Cacau', price: 26.00, quantity: 1, image: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp' },
+        { id: '3', name: 'Uma Muda de Mamão', price: 28.00, quantity: 1, image: 'img/muda de mamaõ.webp' },
         // Adicione mais produtos conforme necessário
         { id: '4', name: 'Produto 4', price: 25.00, quantity: 1, image: 'produto4.webp' },
         { id: '5', name: 'Produto 5', price: 45.00, quantity: 1, image: 'produto5.webp' },
