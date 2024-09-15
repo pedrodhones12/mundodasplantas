@@ -52,9 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {
         cart.forEach((item, index) => {
             const produtoDiv = document.createElement('div');
             produtoDiv.classList.add('produto-carrinho');
+
+            // Verifica se a imagem está no diretório 'img/' e usa o caminho correto
+            const imagePath = item.image.startsWith('img/') ? item.image : 'img/' + item.image;
             
             produtoDiv.innerHTML = `
-                <img src="${item.image.startsWith('img/') ? item.image : 'img/' + item.image}" alt="${item.name}" width="100">
+                <img src="${imagePath}" alt="${item.name}" width="100">
                 <p><strong>Produto:</strong> ${item.name}</p>
                 <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
                 <p><strong>Quantidade:</strong> 
@@ -63,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <button class="aumentar" data-index="${index}">+</button>
                 </p>
             `;
-            
+
             carrinhoDiv.appendChild(produtoDiv);
         });
 
@@ -99,3 +102,5 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCart();
     renderCart();
 });
+
+
