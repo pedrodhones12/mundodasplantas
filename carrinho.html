@@ -51,7 +51,7 @@
                     produtoDiv.classList.add('produto-carrinho');
                     
                     produtoDiv.innerHTML = `
-                        <img src="img/${item.<img src="img/D_NQ_NP_701042-MLB49731972417_042022-O.webp"}" alt="${item.name}" width="100">
+                        <img src="img/${item.image}" alt="${item.name}" width="100">
                         <p><strong>Produto:</strong> ${item.name}</p>
                         <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
                         <p><strong>Quantidade:</strong> 
@@ -90,7 +90,7 @@
             // Função para limpar o carrinho
             document.getElementById('limparCarrinho').addEventListener('click', function() {
                 localStorage.removeItem('cart');
-                carrinhoDiv.innerHTML = ''; // Limpa o HTML do carrinho
+                renderCart(); // Atualiza o HTML do carrinho
             });
 
             // Função para finalizar a compra via WhatsApp
@@ -117,4 +117,3 @@
     </script>
 </body>
 </html>
-
