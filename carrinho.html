@@ -41,7 +41,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
             const carrinhoDiv = document.getElementById('carrinho');
 
             function renderCart() {
@@ -56,7 +56,7 @@
                         <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
                         <p><strong>Quantidade:</strong> 
                             <button class="diminuir" data-index="${index}">-</button> 
-                            ${item.quantity} 
+                            <span class="quantidade">${item.quantity}</span>
                             <button class="aumentar" data-index="${index}">+</button>
                         </p>
                     `;
@@ -68,15 +68,14 @@
             // Renderiza o carrinho quando a página carrega
             renderCart();
 
-            // Aumenta a quantidade do produto
+            // Aumenta ou diminui a quantidade do produto
             carrinhoDiv.addEventListener('click', function(event) {
+                const index = event.target.dataset.index;
                 if (event.target.classList.contains('aumentar')) {
-                    const index = event.target.dataset.index;
                     cart[index].quantity += 1;
                     localStorage.setItem('cart', JSON.stringify(cart));
                     renderCart();
                 } else if (event.target.classList.contains('diminuir')) {
-                    const index = event.target.dataset.index;
                     if (cart[index].quantity > 1) {
                         cart[index].quantity -= 1;
                     } else {
@@ -90,6 +89,7 @@
             // Função para limpar o carrinho
             document.getElementById('limparCarrinho').addEventListener('click', function() {
                 localStorage.removeItem('cart');
+                cart = []; // Limpa o array do carrinho
                 renderCart(); // Atualiza o HTML do carrinho
             });
 
