@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'img/produto4.webp', quantity: 0 },
         { id: 'img/viveiromuda3rubissol.jpg', quantity: 0 },
         { id: 'img/mudadeaipim.jpg', quantity: 0 },
-        { id: 'img/muda_de_capim.webp', quantity: 0 }, // Corrigido
         { id: 'img/mudafolha.webpsanto.webp', quantity: 0 }
         // Adicione os demais produtos conforme necessário
     ];
