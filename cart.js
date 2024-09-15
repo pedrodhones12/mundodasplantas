@@ -6,17 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         price: 185,00,
         quantity: 1,
         image: 'bata bauregard.webp' // Certifique-se de que a imagem está na pasta 'img/'
-    };
-const item={
-id: '1',
-    name: '5 Mudas de hortelã Pimenta;
-    price 30,00,
-    quantiy: 1,
-    image: img/5 MudasDeHortelã.webp 
-    };
-
-  
-        
+    };   
     
     // Adiciona o item de exemplo ao carrinho se ainda não estiver presente
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
