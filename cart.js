@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: '1', name: 'Bata Bauregard', price: 29.90, quantity: 1, image: 'bata bauregard.webp' },
         { id: '2', name: 'Muda de Cacau', price: 26.00, quantity: 1, image: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp' }, 
         { id: '3', name: 'Uma Muda de Mamão', price: 28.00, quantity: 1, image: 'img/muda de mamaõ.webp' },
-        // Adicione mais produtos conforme necessário
         { id: '4', name: 'Produto 4', price: 25.00, quantity: 1, image: 'img/produto4.webp' },
         { id: '5', name: 'Produto 5', price: 45.00, quantity: 1, image: 'img/produto5.webp' },
         { id: '6', name: 'Produto 6', price: 55.00, quantity: 1, image: 'img/produto6.webp' },
@@ -47,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderCart() {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         const carrinhoDiv = document.getElementById('carrinho');
+        if (!carrinhoDiv) return; // Garante que o elemento exista
+
         carrinhoDiv.innerHTML = ''; // Limpa o carrinho antes de renderizar
 
         cart.forEach((item, index) => {
@@ -102,5 +103,3 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCart();
     renderCart();
 });
-
-
