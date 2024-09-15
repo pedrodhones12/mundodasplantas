@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Lista de produtos
     const exampleItems = [
-        { id: '1', name: 'Bata Bauregard', price: 29.90, quantity: 1, image: 'bata bauregard.webp' },
-        { id: '2', name: 'Muda de Cacau', price: 26.00, quantity: 1, image: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp' },
-        { id: '3', name: 'Uma Muda de Mamão', price: 28.00, quantity: 1, image: 'img/muda de mamaõ.webp' },
-        { id: '4', name: 'Produto 4', price: 25.00, quantity: 1, image: 'img/produto4.webp' },
+        { id: ' image: 'bata bauregard.webp' },
+        { id: ' image: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp' },
+        { id: ' image: 'img/muda de mamaõ.webp' },
+        { id:  'img/produto4.webp' },
         // Adicione os demais produtos conforme necessário
     ];
 
