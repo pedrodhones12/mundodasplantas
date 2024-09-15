@@ -1,16 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Lista de produtos com IDs corrigidos e novas imagens adicionadas
+    // Lista de produtos com IDs, nomes e preços
     const exampleItems = [
-        { id: 'bata bauregard.webp', quantity: 0 },
-        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', quantity: 0 },
-        { id: 'img/muda de mamaõ.webp', quantity: 0 },
-        { id: 'img/produto4.webp', quantity: 0 },
-        { id: 'img/viveiromuda3rubissol.jpg', quantity: 0 },
-        { id: 'img/mudadeaipim.jpg', quantity: 0 },
-        { id: 'img/mudafolha.webpsanto.webp', quantity: 0 },
-        { id: 'img/muda de capim santo.webp', quantity: 0 },
-        { id: 'img/129284280c751b54422.webp', quantity: 0 },
-        { id: 'img/GENIPAPO.jpg', quantity: 0 }
+        { id: 'bata bauregard.webp', name: 'Bata Bauregard', price: 'R$ 185,00', quantity: 0 },
+        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', name: 'Produto 1', price: 'R$ 20,00', quantity: 0 },
+        { id: 'img/muda de mamaõ.webp', name: 'Muda de Mamão', price: 'R$ 28,00', quantity: 0 },
+        { id: 'img/produto4.webp', name: 'Produto 4', price: 'R$ 50,00', quantity: 0 },
+        { id: 'img/viveiromuda3rubissol.jpg', name: 'Muda de Rubi Sol', price: 'R$ 15,00', quantity: 0 },
+        { id: 'img/mudadeaipim.jpg', name: 'Muda de Aipim', price: 'R$ 160,00', quantity: 0 },
+        { id: 'img/mudafolha.webpsanto.webp', name: 'Muda Folha Santo', price: 'R$ 8,00', quantity: 0 },
+        { id: 'img/muda de capim santo.webp', name: 'Muda de Capim Santo', price: 'R$ 28,00', quantity: 0 },
+        { id: 'img/129284280c751b54422.webp', name: 'Produto 8', price: 'R$ 25,00', quantity: 0 },
+        { id: 'img/GENIPAPO.jpg', name: 'Genipapo', price: 'R$ 18,00', quantity: 0 },
+        { id: 'img/ora pro´nobis.webp', name: 'Ora Pro Nobis', price: 'R$ 30,00', quantity: 0 },
+        { id: 'img/17443497404eac84d7f_resized_resized.webp', name: 'Produto 12', price: 'R$ 35,00', quantity: 0 }
     ];
 
     function initializeCart() {
@@ -37,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const imagePath = item.id.startsWith('img/') ? item.id : 'img/' + item.id;
 
             produtoDiv.innerHTML = `
-                <img src="${imagePath}" alt="Produto" width="100">
+                <img src="${imagePath}" alt="${item.name}" width="100">
+                <p><strong>Nome:</strong> ${item.name}</p>
+                <p><strong>Preço:</strong> ${item.price}</p>
                 <p><strong>Quantidade:</strong> 
                     <button class="diminuir" data-index="${index}">-</button> 
                     ${item.quantity} 
@@ -97,9 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function finalizePurchase() {
-        // Aqui você pode adicionar a lógica para finalizar a compra, como redirecionar para o WhatsApp
-        // Exemplo:
-        // window.location.href = 'https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=Finalize sua compra';
+        // Lógica para finalizar a compra, como redirecionar para o WhatsApp
         alert('Compra finalizada!');
     }
 
@@ -126,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
         finalizePurchaseButton.addEventListener('click', finalizePurchase);
     }
 });
+
 
 
 
