@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const exampleItem = {
         id: '1',
         name: 'Bata Bauregard',
-        price: 29.90,
+        price: 185,00,
         quantity: 1,
         image: 'bata bauregard.webp' // Certifique-se de que a imagem está na pasta 'img/'
     };
