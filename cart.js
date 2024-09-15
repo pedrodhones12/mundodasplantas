@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Lista de produtos com IDs corrigidos
+    // Lista de produtos com IDs corrigidos e novas imagens adicionadas
     const exampleItems = [
         { id: 'bata bauregard.webp', quantity: 0 },
         { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', quantity: 0 },
@@ -7,8 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'img/produto4.webp', quantity: 0 },
         { id: 'img/viveiromuda3rubissol.jpg', quantity: 0 },
         { id: 'img/mudadeaipim.jpg', quantity: 0 },
-        { id: 'img/mudafolha.webpsanto.webp', quantity: 0 }
-        // Adicione os demais produtos conforme necessário
+        { id: 'img/mudafolha.webpsanto.webp', quantity: 0 },
+        { id: 'img/muda de capim santo.webp', quantity: 0 },
+        { id: 'img/129284280c751b54422.webp', quantity: 0 },
+        { id: 'img/GENIPAPO.jpg', quantity: 0 }
     ];
 
     function initializeCart() {
@@ -82,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (cartItem) {
                 cartItem.quantity += 1;
             } else {
-                cart.push({...item, quantity: 1}); // Adiciona o item com quantidade inicial de 1
+                cart.push({ ...item, quantity: 1 }); // Adiciona o item com quantidade inicial de 1
             }
             localStorage.setItem('cart', JSON.stringify(cart));
             renderCart();
@@ -124,5 +126,6 @@ document.addEventListener('DOMContentLoaded', function() {
         finalizePurchaseButton.addEventListener('click', finalizePurchase);
     }
 });
+
 
 
