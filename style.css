@@ -313,26 +313,4 @@ footer {
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-card {
-    min-width: 100%; /* Garante que cada imagem ocupe 100% da largura do contêiner */
-}
 
-.carousel-card img {
-    width: 100%; /* Ajusta a imagem para caber no contêiner */
-    height: auto; /* Mantém
-/* Estilos para a notificação do carrinho */
-.cart-notification {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.cart-notification.show {
-    opacity: 1;
-}
