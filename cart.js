@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Lista de produtos
     const exampleItems = [
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             produtoDiv.classList.add('produto-carrinho');
 
             const imagePath = item.image.startsWith('img/') ? item.image : 'img/' + item.image;
-            
+
             produtoDiv.innerHTML = `
                 <img src="${imagePath}" alt="${item.name}" width="100">
                 <p><strong>Produto:</strong> ${item.name}</p>
@@ -46,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             carrinhoDiv.appendChild(produtoDiv);
         });
 
+        // Adiciona eventos aos botões de quantidade
         document.querySelectorAll('.diminuir').forEach(button => {
             button.addEventListener('click', function() {
                 const index = this.dataset.index;
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function finalizePurchase() {
         // Aqui você pode adicionar a lógica para finalizar a compra, como redirecionar para o WhatsApp
-        // Por exemplo, você pode usar:
+        // Exemplo:
         // window.location.href = 'https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=Finalize sua compra';
         alert('Compra finalizada!');
     }
@@ -104,10 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCart();
     renderCart();
 
-    // Adiciona eventos aos botões
-    document.getElementById('clear-cart').addEventListener('click', clearCart);
-    document.getElementById('finalize-purchase').addEventListener('click', finalizePurchase);
-
     // Adiciona eventos aos botões "Adicionar ao Carrinho"
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', function() {
@@ -115,4 +111,16 @@ document.addEventListener('DOMContentLoaded', function() {
             addItemToCart(itemId);
         });
     });
+
+    // Adiciona eventos aos botões de limpar e finalizar compra
+    const clearCartButton = document.getElementById('clear-cart');
+    if (clearCartButton) {
+        clearCartButton.addEventListener('click', clearCart);
+    }
+
+    const finalizePurchaseButton = document.getElementById('finalize-purchase');
+    if (finalizePurchaseButton) {
+        finalizePurchaseButton.addEventListener('click', finalizePurchase);
+    }
 });
+
