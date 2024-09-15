@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Lista de produtos
     const exampleItems = [
-        { id: 'bata bauregard.webp', },
-        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp',  },
-        { id: 'img/muda de mamaõ.webp',  },
-        { id: 'img/produto4.webp',  },
-        { id: 'img/viveiromuda3rubissol.jpg',  },
-        { id: 'img/mudadeaipim.jpg',  },
-        { id: 'img/muda de capim',  },
-        { id: 'img/bata bauregard.webp',  },
-        { id: 'img/mudafolha.webpsanto.webp', }
+        { id: 'bata bauregard.webp', quantity: 0 },
+        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', quantity: 0 },
+        { id: 'img/muda de mamaõ.webp', quantity: 0 },
+        { id: 'img/produto4.webp', quantity: 0 },
+        { id: 'img/viveiromuda3rubissol.jpg', quantity: 0 },
+        { id: 'img/mudadeaipim.jpg', quantity: 0 },
+        { id: 'img/muda de capim', quantity: 0 },
+        { id: 'img/bata bauregard.webp', quantity: 0 },
+        { id: 'img/mudafolha.webpsanto.webp', quantity: 0 }
         // Adicione os demais produtos conforme necessário
     ];
 
@@ -126,5 +126,3 @@ document.addEventListener('DOMContentLoaded', function() {
         finalizePurchaseButton.addEventListener('click', finalizePurchase);
     }
 });
-
-
