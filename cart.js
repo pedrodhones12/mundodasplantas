@@ -34,20 +34,20 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: '30', name: 'Produto 30', price: 295.00, quantity: 1, image: 'produto30.webp' }
     ];
 
-    // Inicializa o carrinho com o item de exemplo se ele não estiver presente
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    exampleItems.forEach(item => {
-        if (!cart.some(cartItem => cartItem.id === item.id)) {
-            cart.push(item);
-        }
-    });
-    localStorage.setItem('cart', JSON.stringify(cart));
-
-    const carrinhoDiv = document.getElementById('carrinho');
+    function initializeCart() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        exampleItems.forEach(item => {
+            if (!cart.some(cartItem => cartItem.id === item.id)) {
+                cart.push(item);
+            }
+        });
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
 
     function renderCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const carrinhoDiv = document.getElementById('carrinho');
         carrinhoDiv.innerHTML = ''; // Limpa o carrinho antes de renderizar
-        const cart = JSON.parse(localStorage.getItem('cart')) || []; // Garantir que o carrinho esteja atualizado
 
         cart.forEach((item, index) => {
             const produtoDiv = document.createElement('div');
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateQuantity(index, change) {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
         if (cart[index]) {
             cart[index].quantity += change;
             if (cart[index].quantity <= 0) {
@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Renderiza o carrinho ao carregar a página
+    // Inicializa o carrinho e renderiza
+    initializeCart();
     renderCart();
 });
