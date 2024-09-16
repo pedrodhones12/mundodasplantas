@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lista de produtos com IDs, nomes e preços
     const exampleItems = [
         { id: 'img/bata bauregard.webp', name: 'Bata Bauregard', price: 'R$ 185,00', quantity: 0 },
-        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', name: 'Muda de Cacau', price: 'R$ 20,00', quantity: 0 },
+        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', name: 'Muda de Cacau', price: 'R$ 26,00', quantity: 0 },
         { id: 'img/muda de mamaõ.webp', name: 'Muda de Mamão', price: 'R$ 28,00', quantity: 0 },
         { id: 'img/produto4.webp', name: 'Produto 4', price: 'R$ 50,00', quantity: 0 },
         { id: 'img/viveiromuda3rubissol.jpg', name: '30 Mudas Batata Doce BRS Rubissol', price: 'R$ 185,00', quantity: 0 },
