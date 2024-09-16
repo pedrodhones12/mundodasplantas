@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'img/mudafolhasanto.webp', name: 'Muda Folha Santo', price: 'R$ 8,00', quantity: 0 },
         { id: 'img/muda de capim santo.webp', name: 'Muda de Capim Santo', price: 'R$ 28,00', quantity: 0 },
         { id: 'img/129284280c751b54422.webp', name: 'Produto 8', price: 'R$ 25,00', quantity: 0 },
-        { id: 'img/GENIPAPO.jpg', name: 'Genipapo', price: 'R$ 18,00', quantity: 0 },
+        { id: 'img/GENIPAPO.jpg', name: 'Genipapo', price: 'R$ 30,00', quantity: 0 },
         { id: 'img/ora pro´nobis.webp', name: 'Ora Pro Nobis', price: 'R$ 30,00', quantity: 0 },
         { id: 'img/17443497404eac84d7f_resized_resized.webp', name: 'Produto 12', price: 'R$ 35,00', quantity: 0 }
     ];
