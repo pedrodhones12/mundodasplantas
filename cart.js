@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lista de produtos com IDs, nomes e preços
     const exampleItems = [
         { id: 'img/bata bauregard.webp', name: 'Bata Bauregard', price: 'R$ 185,00', quantity: 0 },
-        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', name: 'Produto 1', price: 'R$ 20,00', quantity: 0 },
+        { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', name: 'Muda de Cacau', price: 'R$ 20,00', quantity: 0 },
         { id: 'img/muda de mamaõ.webp', name: 'Muda de Mamão', price: 'R$ 28,00', quantity: 0 },
         { id: 'img/produto4.webp', name: 'Produto 4', price: 'R$ 50,00', quantity: 0 },
-        { id: 'img/viveiromuda3rubissol.jpg', name: 'Muda de Rubi Sol', price: 'R$ 15,00', quantity: 0 },
+        { id: 'img/viveiromuda3rubissol.jpg', name: '30 Mudas Batata Doce BRS Rubissol', price: 'R$ 185,00', quantity: 0 },
         { id: 'img/mudadeaipim.jpg', name: 'Muda de Aipim', price: 'R$ 160,00', quantity: 0 },
         { id: 'img/mudafolhasanto.webp', name: 'Muda Folha Santo', price: 'R$ 8,00', quantity: 0 },
         { id: 'img/muda de capim santo.webp', name: 'Muda de Capim Santo', price: 'R$ 28,00', quantity: 0 },
-        { id: 'img/129284280c751b54422.webp', name: 'Produto 8', price: 'R$ 25,00', quantity: 0 },
+        { id: 'img/129284280c751b54422.webp', name: 'Muda de Comigo Ninguém Pode 40cm ', price: 'R$ 25,00', quantity: 0 },
         { id: 'img/GENIPAPO.jpg', name: 'Genipapo', price: 'R$ 30,00', quantity: 0 },
         { id: 'img/ora pro´nobis.webp', name: 'Ora Pro Nobis', price: 'R$ 30,00', quantity: 0 },
         { id: 'img/17443497404eac84d7f_resized_resized.webp', name: 'três mudas de acerola', price: 'R$ 60,00', quantity: 0 }
