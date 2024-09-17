@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'img/bata bauregard.webp', name: 'Bata Bauregard', price: 'R$ 185,00', quantity: 0 },
         { id: 'img/D_NQ_NP_701042-MLB49731972417_042022-O.webp', name: 'Muda de Cacau', price: 'R$ 26,00', quantity: 0 },
         { id: 'img/muda de mamaõ.webp', name: 'Muda de Mamão', price: 'R$ 28,00', quantity: 0 },
-        { id: 'img/mudadejaca.webp', name: 'Muda De Jaca', price: 'R$ 50,00', quantity: 0 },
+        { id: 'img/mudadejaca.webp', name: 'Muda De Jaca', price: 'R$ 27,00', quantity: 0 },
         { id: 'img/viveiromuda3rubissol.jpg', name: '30 Mudas Batata Doce BRS Rubissol', price: 'R$ 185,00', quantity: 0 },
         { id: 'img/mudadeaipim.jpg', name: 'Muda de Aipim', price: 'R$ 160,00', quantity: 0 },
         { id: 'img/200folhasmédias.webp', name: '200 Folhas Médias De Graviola', price: 'R$ 35,00', quantity: 0 },
