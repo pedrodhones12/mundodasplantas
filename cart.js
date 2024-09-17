@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'img/produto4.webp', name: 'Produto 4', price: 'R$ 50,00', quantity: 0 },
         { id: 'img/viveiromuda3rubissol.jpg', name: '30 Mudas Batata Doce BRS Rubissol', price: 'R$ 185,00', quantity: 0 },
         { id: 'img/mudadeaipim.jpg', name: 'Muda de Aipim', price: 'R$ 160,00', quantity: 0 },
-        { id: 'img/mudafolhasanto.webp', name: 'Muda Folha Santo', price: 'R$ 8,00', quantity: 0 },
+        { id: 'img/200folhasmédias.webp', name: '200 Folhas Médias De Graviola', price: 'R$ 35,00', quantity: 0 },
         { id: 'img/muda de capim santo.webp', name: 'Muda de Capim Santo', price: 'R$ 28,00', quantity: 0 },
         { id: 'img/129284280c751b54422.webp', name: 'Muda de Comigo Ninguém Pode 40cm ', price: 'R$ 25,00', quantity: 0 },
         { id: 'img/GENIPAPO.jpg', name: 'Genipapo', price: 'R$ 30,00', quantity: 0 },
