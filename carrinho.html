@@ -31,6 +31,7 @@
         <div id="carrinho">
             <!-- Produtos do carrinho serão inseridos aqui -->
         </div>
+        <div id="total">Total: R$ 0,00</div>
         <button id="limparCarrinho">Limpar Carrinho</button>
         <button id="finalizarCompra">Finalizar Compra</button>
     </main>
@@ -38,88 +39,7 @@
     <footer>
         <!-- Seu rodapé -->
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            const carrinhoDiv = document.getElementById('carrinho');
-
-            function renderCart() {
-                carrinhoDiv.innerHTML = ''; // Limpa o carrinho antes de renderizar
-                if (cart.length === 0) {
-                    carrinhoDiv.innerHTML = '<p>O carrinho está vazio.</p>';
-                    return;
-                }
-                cart.forEach((item, index) => {
-                    const produtoDiv = document.createElement('div');
-                    produtoDiv.classList.add('produto-carrinho');
-                    
-                    produtoDiv.innerHTML = `
-                        <img src="img/${item.image}" alt="${item.name}" width="100">
-                        <p><strong>Produto:</strong> ${item.name}</p>
-                        <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
-                        <p><strong>Quantidade:</strong> 
-                            <button class="diminuir" data-index="${index}">-</button> 
-                            <span class="quantidade">${item.quantity}</span>
-                            <button class="aumentar" data-index="${index}">+</button>
-                        </p>
-                    `;
-                    
-                    carrinhoDiv.appendChild(produtoDiv);
-                });
-            }
-
-            // Renderiza o carrinho quando a página carrega
-            renderCart();
-
-            // Aumenta ou diminui a quantidade do produto
-            carrinhoDiv.addEventListener('click', function(event) {
-                const index = event.target.dataset.index;
-                if (event.target.classList.contains('aumentar')) {
-                    cart[index].quantity += 1;
-                    localStorage.setItem('cart', JSON.stringify(cart));
-                    renderCart();
-                } else if (event.target.classList.contains('diminuir')) {
-                    if (cart[index].quantity > 1) {
-                        cart[index].quantity -= 1;
-                    } else {
-                        cart.splice(index, 1); // Remove o produto se a quantidade for 0
-                    }
-                    localStorage.setItem('cart', JSON.stringify(cart));
-                    renderCart();
-                }
-            });
-
-            // Função para limpar o carrinho
-            document.getElementById('limparCarrinho').addEventListener('click', function() {
-                localStorage.removeItem('cart');
-                cart = []; // Limpa o array do carrinho
-                renderCart(); // Atualiza o HTML do carrinho
-                alert("Carrinho limpo com sucesso.");
-            });
-
-            // Função para finalizar a compra via WhatsApp
-            document.getElementById('finalizarCompra').addEventListener('click', function() {
-                if (cart.length === 0) {
-                    alert('O carrinho está vazio.');
-                    return;
-                }
-
-                let mensagem = 'Olá, gostaria de finalizar a compra dos seguintes itens:\n\n';
-                let total = 0;
-
-                cart.forEach(item => {
-                    mensagem += `*${item.name}* - Quantidade: ${item.quantity} - Preço: R$ ${item.price.toFixed(2)}\n`;
-                    total += item.price * item.quantity;
-                });
-
-                mensagem += `\n*Total: R$ ${total.toFixed(2)}*\n`;
-                const whatsappUrl = `https://wa.me/5573981135119?text=${encodeURIComponent(mensagem)}`;
-                
-                window.open(whatsappUrl, '_blank');
-            });
-        });
-    </script>
 </body>
 </html>
+
 
