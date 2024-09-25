@@ -1,0 +1,95 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+     <title>Fruta Noni Orgânicos Sua Saúde Blindada </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">=</a>
+              <div class="dropdown-content">
+                        <a href="sementes.html">Sementes</a>
+                        <a href="mudas.html">Mudas</a>
+                        <a href="frutas.html">Frutas</a>
+                        <!-- Adicione mais categorias conforme necessário -->
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Meio">
+        <div class="right">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar produtos...">
+                <button onclick="searchProducts()">Buscar</button>
+                <div class="cart">
+                    <a href="carrinho.html">
+                        <img src="img/carrinhodecompra_resized_resized.jpeg" alt="Carrinho de Compras" width="30">
+                        <span id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+   
+                 </a>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4KVVZEJN2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N4KVVZEJN2');
+</script>
+            
+    <h1>Fruta Noni Orgânicos. Sua Saúde Blindada Pela Natureza</h1>
+    <img src="img/200folhasmédias.webp" alt="Muda de Batata">
+    <p class="price">R$ 35,00</p>
+    <h1>CHÁ DE FOLHAS DE GRAVIOLA (ENVIO RÁPIDO NO MESMO DIA DA COMPRA) FOLHAS ORGÂNICAS SEM AGROTÓXICO</h1>
+    <p>O noni deve ser idealmente consumido em forma de suco, batido com suco de uva (ou qualquer outra fruta) concentrado e isento de açúcar. Isto porque o noni tem aroma e sabor de difícil apreciação. A posologia indicada na prevenção e tratamento é de 1 colher de sopa 2 vezes/dia deste suco.
+
+Colocar em frasco de vidro limpo, tampar bem e manter na geladeira. Obs: Frutas apanhadas no dia do envio.   </p>
+    <a href="https://api.whatsapp.com/send?phone=+5573981135119&text=Olá!" target="_blank">Entre em contato pelo WhatsApp</a>
+    <!-- Social Media Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://plantasdabahia.com.br/200folhasm%C3%A9dias.html" target="_blank">
+            <img src="img/facebook_resized.jpeg" alt="Facebook" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnWhatsApp()">
+            <img src="img/whatsap emoji.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+        </a>
+        <a href="#" onclick="shareOnTwitter()">
+            <img src="img/twiter_resized.jpeg" alt="Twitter" style="width: 32px; height: 32px;">
+        </a>
+    </div>
+    <script>
+        function shareOnWhatsApp() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("200 Folhas Médias De Graviola Orgânicas - Plantas da Bahia");
+            window.open("https://api.whatsapp.com/send?text=" + text + "%20" + url, "popup", "width=600,height=400");
+            return false;
+        }
+
+        function shareOnTwitter() {
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("200 Folhas Médias De Graviola Orgânicas - Plantas da Bahia");
+            window.open("https://twitter.com/intent/tweet?url=" + url + "&text=" + text, "popup",
+
+</body>
+ <!-- Rodapé -->
+    <footer class="blue-background">
+        <p>Desenvolvido por Construindo Sonhos Web</p>
+    </footer>
+</body>
+
+</html>
+                        
